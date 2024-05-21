@@ -39,6 +39,10 @@ nav{
     gap: 100px;
 }
 
+#location>span{
+  font-size: medium;
+}
+
 /* -------------- M A I N - B A N N E R -------------- */
 
 .main-banner{
@@ -84,20 +88,67 @@ nav{
     margin-top: 10%;
 }
 
-
 .about-us-wrapper{
     display: flex;
     border-radius: 20px;
-    justify-content: space-between;
-    width: 900px;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
     height: 600px;
-    overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+/* content */
 
 #about-us-content{
     display: flex;
     padding: 20px;
     flex-direction: column;
     justify-content: center;
+    width: 400px;
+    height: 500px;
+    text-transform: capitalize;
+}
+
+#about-us-content h2{
+    color: orange;
+}
+
+#about-us-content button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* images */
+
+.about-us-wrapper img:nth-child(1){
+   width: 200px;
+   height: 250px;
+   border-radius: 20px;
+   position: absolute;
+}
+
+.about-us-wrapper img:nth-child(2){
+   width: 200px;
+   height: 250px;
+   border-radius: 20px;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+}
+
+#images{
+    border: 2px solid orange;
+    padding: 10px;
+    width: 450px;
+    height: 530px;
+    border-radius: 20px;
+    position: relative;
 }
