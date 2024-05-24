@@ -5,6 +5,15 @@
     scroll-behavior: smooth;
 }
 
+body.light-mode{
+    background-color: white;
+}
+
+body.dark-mode{
+    background-color: black;
+    color: white;
+}
+
 /* -------------- H E A D E R -------------- */
 
 header{
@@ -41,6 +50,13 @@ nav{
 
 #location>span{
   font-size: medium;
+}
+
+#toggle-theme{
+   padding: 0px 10px;
+   border-radius: 20px;
+   text-transform: capitalize;
+
 }
 
 /* -------------- M A I N - B A N N E R -------------- */
@@ -151,4 +167,8 @@ nav{
     height: 530px;
     border-radius: 20px;
     position: relative;
+}
+
+.fa-sun{
+    display: block;
 }
