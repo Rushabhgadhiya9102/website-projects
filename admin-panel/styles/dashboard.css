@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* --------------- M A I N - C O N T A I N E R ------------- */
+
+#hero-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ------------- S I D E - B A R -------------- */
+#sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: x-large;
+    justify-content: center;
+}
+
+#sidebar>button{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* ------------ M A I N - P A G E ----------------- */
+
+#main-page{
+    width: 80%;
+    height: 100vh;
+    background-color: black;
+    overflow-x: scroll;
+}
+
