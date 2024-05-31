@@ -4,38 +4,104 @@
     box-sizing: border-box;
 }
 
-/* --------------- M A I N - C O N T A I N E R ------------- */
-
-#hero-container{
-    display: flex;
-    height: 100vh;
+#villain-container{
     width: 100%;
+    height: 100vh;
+    display: flex;
 }
 
-/* ------------- S I D E - B A R -------------- */
-#sidebar{
+/* --------------- S I D E - B A R  -------------- */
+
+#side-bar{
     width: 20%;
     height: 100vh;
-    background-color: greenyellow;
+    background-color: darkblue;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    font-size: x-large;
     justify-content: center;
+    gap: 20px;
+    text-align: left;
+    position: relative;
 }
 
-#sidebar>button{
+.nav-button{
+    display: flex;
+    gap: 50px;
+    margin-left: 10%;
+    font-size: larger;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    user-select: none;
+}
+
+.nav-button:hover{
+   
+  
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    transition: 0.5s;
+}
+
+input{
     padding: 10px;
     border-radius: 20px;
+    border: none;
+    width: 100px;
+}
+
+.bx-menu-alt-right{
+    font-size: larger;
+    position: absolute;
+    left: 10px;
+    color: white;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 
-/* ------------ M A I N - P A G E ----------------- */
+/* --------------- M A I N - C O N T E N T -------------- */
 
-#main-page{
-    width: 80%;
+#main-content{
+    width: 100%;
     height: 100vh;
-    background-color: black;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    padding: 20px;
+    position: relative;
 }
 
+/* -------------------- C H A R T S ---------------------- */
+
+#charts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  
+  #chart1,
+  #chart2 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.997);
+    border-radius: 10px;
+    padding: 10px;
+    height: 400px;
+    width: 600px;
+  }
+
+  #chart3{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.997);
+    border-radius: 10px;
+    padding: 10px;
+    height: 400px;
+    width: 80%;
+  }
+  
