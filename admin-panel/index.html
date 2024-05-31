@@ -8,7 +8,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/css/jquery.animatedheadline.min.css">
     <link rel="stylesheet" href="./styles/dashboard.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,61 +24,50 @@
       <!------------------------------------ S I D E - B A R --------------------------------------->
 
       <div id="side-bar">
-        <!-- menu-icon -->
-
-        <div class="hamburger-bar">
-          <i class='bx bx-menu-alt-right'></i>
-        </div>
-
-        <!-- search-bar -->
-        <div class="nav-button">
-          <i class='bx bx-search-alt-2' ></i>
-          <span class="btnNameHide"><input type="text" placeholder="search"></span>
-        </div>
         
-
-        <!-- button-1 -->
-        <div class="nav-button">
+        <i class='bx bx-menu'></i>
+        <!-- button-1 --> 
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bxs-dashboard' for="#dashboard"></i>
           <span class="btnNameHide" for="#dashboard">dashboard</span>
         </div>
         <!-- button-2 -->
-        <div class="nav-button">
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bx-user' for="#user"></i>
           <span class="btnNameHide" for="#user">user</span>
         </div>
         <!-- button-3 -->
-        <div class="nav-button">
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bx-chat'></i>
           <span class="btnNameHide">message</span>
         </div>
         <!-- button-4 -->
-        <div class="nav-button">
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bx-network-chart'></i>
           <span class="btnNameHide">analysis</span>
         </div>
         <!-- button-5 -->
-        <div class="nav-button">
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bx-folder'></i>
-          <span class="btnNameHide">flie manager</span>
+          <span class="btnNameHide">flies</span>
         </div>
         <!-- button-6 -->
-        <div class="nav-button">
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bx-cart-alt' ></i>
           <span class="btnNameHide">order</span>
         </div>
         <!-- button-7 -->
-        <div class="nav-button">
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bx-heart' ></i>
           <span class="btnNameHide">saved</span>
         </div>
         <!-- button-8 -->
-        <div class="nav-button">
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bx-cog' ></i>
           <span class="btnNameHide">setting</span>
         </div>
         <!-- button-9 -->
-        <div class="nav-button">
+        <div class="nav-button" data-aos="zoom-in">
           <i class='bx bx-log-in' ></i>
           <span class="btnNameHide">sign up</span>
         </div>
@@ -86,21 +77,45 @@
 
       <!-------------------------------------- M A I N - C O N T E N T ----------------------------------->
       <div id="main-content">
-        
           <!--------------- D A S H - B O A R D -------------->
           <div id="dashboard">
+            
+           <!-- T A S K B A R -->
+ <div>
+           <header>
+            <nav id="task-bar">
+              <div class="left-side">
+                <h1>dashboard</h1>
+            </div>
+              <div class="search" data-aos="zoom-in">
+                <span><input type="text" placeholder="search"></span>
+              </div>
+
+              <div class="right-side">
+                <i class='bx bx-bell' ></i>
+                <i class='bx bx-envelope' ></i>
+                <div class="profile">
+                  <img src="./images/IMG_5628.HEIC">
+                  <div class="selector">
+                    <h3 class="ah-headline">
+                        <span class="ah-words-wrapper">
+                            <b class="is-visible">Hello everyone, I'm</b>
+                            <b>Rushabh gadhiya</b>
+                        </span>
+                    </h3>
+                </div>
+              </div>
+              </div>
+            </nav>
+           </header>
+          </div>
+
           <div id="charts">
             <div id="chart1"></div>
             <div id="chart2"></div>
             <div id="chart3"></div>
         </div>
       </div>
-
-          <div id="user">
-          <div id="charts">
-            <div id="chart1"></div>
-            <div id="chart2"></div>
-        </div>
       </div>
           
             </div>
@@ -115,6 +130,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="./scripts/dashboard.js"></script>
   </body>
