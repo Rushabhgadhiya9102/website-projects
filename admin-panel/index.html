@@ -16,16 +16,16 @@
   </head>
   <body>
 
-    <!--------------- M A I N - C O N T A I N E R -------------->
+    <!------------------------------------------------------ M A I N - C O N T A I N E R ------------------------------------------------------------>
     <div id="villain-container">
 
-      <!--------------- S I D E - B A R -------------->
+      <!------------------------------------ S I D E - B A R --------------------------------------->
 
       <div id="side-bar">
         <!-- menu-icon -->
 
         <div class="hamburger-bar">
-          
+          <i class='bx bx-menu-alt-right'></i>
         </div>
 
         <!-- search-bar -->
@@ -37,13 +37,13 @@
 
         <!-- button-1 -->
         <div class="nav-button">
-          <i class='bx bxs-dashboard'></i>
-          <span class="btnNameHide">dashboard</span>
+          <i class='bx bxs-dashboard' for="#dashboard"></i>
+          <span class="btnNameHide" for="#dashboard">dashboard</span>
         </div>
         <!-- button-2 -->
         <div class="nav-button">
-          <i class='bx bx-user'></i>
-          <span class="btnNameHide">user</span>
+          <i class='bx bx-user' for="#user"></i>
+          <span class="btnNameHide" for="#user">user</span>
         </div>
         <!-- button-3 -->
         <div class="nav-button">
@@ -82,22 +82,33 @@
         </div>
       </div>
 
-      <!--------------- M A I N - C O N T E N T -------------->
+
+
+      <!-------------------------------------- M A I N - C O N T E N T ----------------------------------->
       <div id="main-content">
-        <i class='bx bx-menu-alt-right' style="color: black;"></i>
+        
           <!--------------- D A S H - B O A R D -------------->
+          <div id="dashboard">
           <div id="charts">
             <div id="chart1"></div>
             <div id="chart2"></div>
             <div id="chart3"></div>
         </div>
+      </div>
+
+          <div id="user">
+          <div id="charts">
+            <div id="chart1"></div>
+            <div id="chart2"></div>
+        </div>
+      </div>
           
             </div>
           </div>
       </div>
     </div>
 
-    <!--------------- S C R I P T S -------------->
+    <!------------------------------------------ S C R I P T S ----------------------------------------->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

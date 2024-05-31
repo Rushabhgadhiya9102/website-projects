@@ -58,10 +58,12 @@ input{
     font-size: larger;
     position: absolute;
     left: 10px;
+    top: 5px;
     color: white;
-    background-color: grey;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: darkblue;
+    user-select: none;
 }
 
 
