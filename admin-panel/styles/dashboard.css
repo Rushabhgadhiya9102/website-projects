@@ -119,10 +119,10 @@ input {
   display: flex;
   justify-content: space-between;
   margin: 80px 20px 0px;
-  padding: 10px;
+  
   border-radius: 10px;
   text-transform: capitalize;
-  border: 1px solid #000;
+ 
 }
 
 .formater{
@@ -247,4 +247,71 @@ input {
   padding: 10px;
   height: 400px;
   width: 600px;
+}
+
+
+/* ----------------- V I S I T O R S - T A B L E S ------------------------- */
+
+#page-visitor{
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  text-transform: capitalize;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* border: 1px solid #000; */
+}
+
+.visitors-page-heading{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.visitors-page-heading p{
+  background-color: darkblue;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.visitor-content-heading{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: large;
+}
+
+.visitors-info{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  font-size: large;
+}
+
+/* -------------- C A L A N D E R ----------------- */
+
+#calendar{
+  width: 500px;
+  height: 400px;
+}
+
+.day-muted{
+  color: yellowgreen !important;
+  opacity: 100% !important;
+  font-weight: bold;
+}
+
+.cell{
+  background-color: black;
+  opacity: 100% !important;
+}
+.cell-7{
+  background-color: black !important;
+  opacity: 100% !important;
+  color: yellowgreen !important;
+  font-weight: bold !important;
 }
