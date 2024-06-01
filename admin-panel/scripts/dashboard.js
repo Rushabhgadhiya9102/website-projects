@@ -44,144 +44,8 @@ $(".nav-button>i").on("click", function () {
 
 // --------------- C H A R T S -----------------
 
-var options = {
-  series: [
-    {
-      name: "Inflation",
-      data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2],
-    },
-  ],
-  chart: {
-    height: 350,
-    type: "bar",
-  },
-  plotOptions: {
-    bar: {
-      borderRadius: 10,
-      dataLabels: {
-        position: "top",
-      },
-    },
-  },
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + "%";
-    },
-    offsetY: -20,
-    style: {
-      fontSize: "12px",
-      colors: ["#304758"],
-    },
-  },
 
-  xaxis: {
-    categories: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
-    position: "top",
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-    crosshairs: {
-      fill: {
-        type: "gradient",
-        gradient: {
-          colorFrom: "#D8E3F0",
-          colorTo: "#BED1E6",
-          stops: [0, 100],
-          opacityFrom: 0.4,
-          opacityTo: 0.5,
-        },
-      },
-    },
-    tooltip: {
-      enabled: true,
-    },
-  },
-  yaxis: {
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-    labels: {
-      show: false,
-      formatter: function (val) {
-        return val + "%";
-      },
-    },
-  },
-  title: {
-    text: "Monthly Inflation in Argentina, 2002",
-    floating: true,
-    offsetY: 330,
-    align: "center",
-    style: {
-      color: "#444",
-    },
-  },
-};
-
-var chart = new ApexCharts(document.querySelector("#chart1"), options);
-chart.render();
-
-//   CHART-2  //
-
-var options = {
-  series: [
-    {
-      data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380],
-    },
-  ],
-  chart: {
-    type: "bar",
-    height: 350,
-  },
-  plotOptions: {
-    bar: {
-      borderRadius: 4,
-      horizontal: true,
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  xaxis: {
-    categories: [
-      "South Korea",
-      "Canada",
-      "United Kingdom",
-      "Netherlands",
-      "Italy",
-      "France",
-      "Japan",
-      "United States",
-      "China",
-      "Germany",
-    ],
-  },
-};
-
-var chart = new ApexCharts(document.querySelector("#chart2"), options);
-chart.render();
-
-//chart-3//
+//chart-1//
 var options = {
   series: [
     {
@@ -241,10 +105,70 @@ var options = {
   ],
 };
 
-var chart = new ApexCharts(document.querySelector("#chart3"), options);
+var chart = new ApexCharts(document.querySelector("#chart1"), options);
 chart.render();
 
+// --------- chart-2
 
+var options = {
+  series: [{
+  name: 'Cash Flow',
+  data: [1.45, 5.42, 5.9, -0.42, -12.6, -18.1, -18.2, -14.16, -11.1, -6.09, 0.34, 3.88, 13.07,
+    5.8, 2, 7.37, 8.1, 13.57, 15.75, 17.1, 19.8, -27.03, -54.4, -47.2, -43.3, -18.6, -
+    48.6, -41.1, -39.6, -37.6, -29.4, -21.4, -2.4
+  ]
+}],
+  chart: {
+  type: 'bar',
+  height: 350
+},
+plotOptions: {
+  bar: {
+    colors: {
+      ranges: [{
+        from: -100,
+        to: -46,
+        color: '#F15B46'
+      }, {
+        from: -45,
+        to: 0,
+        color: '#FEB019'
+      }]
+    },
+    columnWidth: '80%',
+  }
+},
+dataLabels: {
+  enabled: false,
+},
+yaxis: {
+  title: {
+    text: 'Growth',
+  },
+  labels: {
+    formatter: function (y) {
+      return y.toFixed(0) + "%";
+    }
+  }
+},
+xaxis: {
+  type: 'datetime',
+  categories: [
+    '2011-01-01', '2011-02-01', '2011-03-01', '2011-04-01', '2011-05-01', '2011-06-01',
+    '2011-07-01', '2011-08-01', '2011-09-01', '2011-10-01', '2011-11-01', '2011-12-01',
+    '2012-01-01', '2012-02-01', '2012-03-01', '2012-04-01', '2012-05-01', '2012-06-01',
+    '2012-07-01', '2012-08-01', '2012-09-01', '2012-10-01', '2012-11-01', '2012-12-01',
+    '2013-01-01', '2013-02-01', '2013-03-01', '2013-04-01', '2013-05-01', '2013-06-01',
+    '2013-07-01', '2013-08-01', '2013-09-01'
+  ],
+  labels: {
+    rotate: -90
+  }
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#chart2"), options);
+chart.render();
 //------------- H E A D L I N E J S -------------
 
 $(function() {
