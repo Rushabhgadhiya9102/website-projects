@@ -170,7 +170,6 @@ xaxis: {
 var chart = new ApexCharts(document.querySelector("#chart2"), options);
 chart.render();
 
-
 // calander
 
 var calendarInstance1 = new calendarJs( "calendar", {
