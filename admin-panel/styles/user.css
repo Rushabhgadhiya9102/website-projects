@@ -1,0 +1,41 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* ------------------ C O V E R - I M A G E ------------------- */
+
+.background-image{
+    margin-top: 50px;
+    height: 600px;
+    background-image: url(../global-images/editing\ file\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.about-content{
+    color: white;
+    width: 400px;
+    height: auto;   
+    margin-left: 100px;
+    font-size: x-large;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-content>button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    background-image: linear-gradient(to bottom, blue, lightseagreen);
+    color: white;
+    font-weight: bold;
+    border: none;
+}

@@ -172,7 +172,7 @@ input {
   text-transform: capitalize;
   flex-wrap: wrap;
   font-size: larger;
-  background-color: white;
+  background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -250,7 +250,8 @@ input {
   padding: 10px;
   height: 400px;
   width: 600px;
-  background-color: white;
+  background-color: whitesmoke;
+  /* background-image: linear-gradient(to bottom, rgb(197, 247, 255), rgb(205, 255, 253)); */
 }
 
 /* ----------------- V I S I T O R S - T A B L E S ------------------------- */
@@ -261,7 +262,7 @@ input {
   border-radius: 20px;
   overflow: hidden;
   text-transform: capitalize;
-  background-color: white;
+  background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
