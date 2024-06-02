@@ -47,14 +47,14 @@
     width: 60%;
     background-color: whitesmoke;
     height: auto;
-    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .user-info-heading{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border: 1px solid #000;
 }
 
 .user-information>form{
@@ -62,7 +62,6 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 20px;
-    border: 1px solid #000;
     justify-content: start;
     gap: 20px;
 }
@@ -92,8 +91,41 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 20px;
-    border: 1px solid #000;
     justify-content: start;
     gap: 20px;
 }
 
+/* -------------------- P R O F I L E - C A R D --------------------- */
+
+#main-profile{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.profile-card>img{
+ width: 100px;
+ height: 100px;
+ border-radius: 50px;
+}
+
+.profile-card{
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, blue, lightseagreen);
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile-content{
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}

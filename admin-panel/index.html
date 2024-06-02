@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/css/jquery.animatedheadline.min.css">
     <link rel="stylesheet" href="./styles/dashboard.css" />
     <link rel="stylesheet" href="./styles/user.css">
+    <link rel="stylesheet" href="./styles/messages.css">
     <link rel="stylesheet" href="./calander.js.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,8 +35,8 @@
         </div>
         <!-- button-3 -->
         <div class="nav-button" >
-          <i class='bx bx-chat'></i>
-          <span class="btnNameHide">message</span>
+          <i class='bx bx-chat' for="#messages"></i>
+          <span class="btnNameHide" for="#messages">message</span>
         </div>
         <!-- button-4 -->
         <div class="nav-button" >
@@ -335,7 +336,7 @@
                 </div>
 
                 <!----------------- U S E R - I N F O ------------------->
-
+                <div id="main-profile">
                 <div id="user-info-form">
                   <div class="user-info-heading">
                     <h2>edit profile</h2>
@@ -373,29 +374,141 @@
                       contact information
                     </h2>
                     <form action="#">
-
+                     <div>
                       <label>address</label>
                       <input type="text" value="7,nand-bunglows,chapre-road,navsari" placeholder="address">
+                    </div>
 
+                    <div>
                       <label>city</label>
                       <input type="text" value="navsari" placeholder="city">
+                    </div>
 
+                    <div>
                       <label>country</label>
                       <input type="text" value="india" placeholder="country">
+                    </div>
 
+                    <div>
                       <label>postal code</label>
                       <input type="text" value="postal code" placeholder="postal code">
-                      
+                    </div>
                     </form>
                   </div>
-
                 </div>
-  
+                  <!------------------- P R O F I L E - C A R D --------------------->
 
-                
-              
-  
+                  
+                    <div class="profile-card">
+                        <img src="./global-images/IMG_5628.HEIC" alt="profile-photo"> <br>
+                        <div class="profile-content">
+                            <h2>i'm rushabh gadhiya</h2> <br>
+                            <h3>a full stack developer</h3> <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea nostrum sit eveniet, sequi quos quidem veniam neque ullam. Delectus, quibusdam asperiores. Corrupti officiis, dicta dolorum id temporibus dolore accusantium!</p>
+                        </div>
+                    </div>
+                </div>
+
               </div>
+
+               <!------------------------------------------ M E S S A G E S  ----------------------------------------->
+
+               <div id="messages">
+ 
+                   <!-------------------- C O N V E R S A T I O N ---------------------->
+                   <div id="main-conversation-section">
+
+                    <div class="message-heading">
+                      <h2>conversation</h2>
+                      <div class="search-bar">
+                        <input type="text" placeholder="search">
+                      </div>
+                    </div>
+                   
+                     <!----------- P E R S O N - 1 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 2 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 3 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 4 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 5 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 6 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 7 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 8 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 9 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+                     <!----------- P E R S O N - 10 ---------->
+                     <div class="people-list">
+                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
+                      <div class="list-content">
+                        <h3>gerald dean</h3>
+                        <p>i am ready</p>
+                      </div>
+                     </div>
+        
+                   </div>
+
+               </div>
             </div>
             </div>
           </div>

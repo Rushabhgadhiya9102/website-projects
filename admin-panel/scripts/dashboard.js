@@ -22,12 +22,12 @@ $(".bx-menu").on("click", function () {
 
 //-------- N A V I G A T I O N - C H A N G E S ---------
 
-$("#user,#icons,#register").hide();
+$("#user,#messages,#icons,#register").hide();
 
 // ----buttons----
 
 $(".nav-button>span").on("click", function () {
-  $("#dashboard,#user,#icons,#register").hide();
+  $("#dashboard,#user,#messages,#icons,#register").hide();
   $($(this).attr("for")).show();
 });
 
