@@ -4,17 +4,26 @@
     box-sizing: border-box;
 }
 
+#messages{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* ------------- P E O P L E - L I S T ---------------- */
 #main-conversation-section{
     margin-top: 56px;
-    width: 30%;
-    height: 92vh;
+    width: 450px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     overflow-y: scroll;
     scrollbar-width: none;
     background-color: whitesmoke;
-    border: 1px solid #000;
 }
 
 .message-heading{
@@ -38,4 +47,66 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+
+/* ---------------------- C H A T - S E C T I O N ----------------------- */
+
+#chat-section{
+    width: 50%;
+    background-color: whitesmoke;
+    margin-top: 60px;
+}
+.chat-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.chat-icons{
+    font-size: x-large;
+}
+
+.chat-name{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.chat-name-2{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 290px;
+}
+
+.chat-name>img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.chat-name-2>img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%
+}
+
+.chat-message-content{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.chat-message-content-2{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: darkblue;
 }
