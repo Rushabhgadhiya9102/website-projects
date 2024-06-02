@@ -1,584 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/css/jquery.animatedheadline.min.css">
-    <link rel="stylesheet" href="./styles/dashboard.css" />
-    <link rel="stylesheet" href="./styles/user.css">
-    <link rel="stylesheet" href="./styles/messages.css">
-    <link rel="stylesheet" href="./calander.js.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>admin-panel</title>
-  </head>
-  <body>
 
-    <!------------------------------------------------------ M A I N - C O N T A I N E R ------------------------------------------------------------>
-    <div id="villain-container">
+<head>
 
-      <!------------------------------------ S I D E - B A R --------------------------------------->
 
-      <div id="side-bar">
-        
-        <i class='bx bx-menu'></i>
-        <!-- button-1 --> 
-        <div class="nav-button" >
-          <i class='bx bxs-dashboard' for="#dashboard"></i>
-          <span class="btnNameHide" for="#dashboard">dashboard</span>
-        </div>
-        <!-- button-2 -->
-        <div class="nav-button" >
-          <i class='bx bx-user' for="#user"></i>
-          <span class="btnNameHide" for="#user">user</span>
-        </div>
-        <!-- button-3 -->
-        <div class="nav-button" >
-          <i class='bx bx-chat' for="#messages"></i>
-          <span class="btnNameHide" for="#messages">message</span>
-        </div>
-        <!-- button-4 -->
-        <div class="nav-button" >
-          <i class='bx bx-network-chart'></i>
-          <span class="btnNameHide">analysis</span>
-        </div>
-        <!-- button-5 -->
-        <div class="nav-button" >
-          <i class='bx bx-folder'></i>
-          <span class="btnNameHide">flies</span>
-        </div>
-        <!-- button-6 -->
-        <div class="nav-button" >
-          <i class='bx bx-cart-alt' ></i>
-          <span class="btnNameHide">order</span>
-        </div>
-        <!-- button-7 -->
-        <div class="nav-button" >
-          <i class='bx bx-heart' ></i>
-          <span class="btnNameHide">saved</span>
-        </div>
-        <!-- button-8 -->
-        <div class="nav-button" >
-          <i class='bx bx-cog' ></i>
-          <span class="btnNameHide">setting</span>
-        </div>
-        <!-- button-9 -->
-        <div class="nav-button" >
-          <i class='bx bx-log-in' ></i>
-          <span class="btnNameHide">sign up</span>
-        </div>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/css/jquery.animatedheadline.min.css">
+  <link rel="stylesheet" href="./styles/dashboard.css" />
+  <link rel="stylesheet" href="./styles/user.css">
+  <link rel="stylesheet" href="./styles/messages.css">
+  <link rel="stylesheet" href="./styles/analysis.css">
+  <link rel="stylesheet" href="./calander.js.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>admin-panel</title>
+</head>
+
+<body>
+
+  <!------------------------------------------------------ M A I N - C O N T A I N E R ------------------------------------------------------------>
+  <div id="villain-container">
+
+    <!------------------------------------ S I D E - B A R --------------------------------------->
+
+    <div id="side-bar">
+
+      <i class='bx bx-menu'></i>
+      <!-- button-1 -->
+      <div class="nav-button">
+        <i class='bx bxs-dashboard' for="#dashboard"></i>
+        <span class="btnNameHide" for="#dashboard">dashboard</span>
       </div>
-
-
-
-      <!-------------------------------------- M A I N - C O N T E N T ----------------------------------->
-      <div id="main-content">
-         <!-- T A S K B A R -->
-         <header>
-          <nav id="task-bar">
-            <div class="left-side">
-              <h1>dashboard</h1>
-          </div>
-          <!-- search -->
-            <div class="search-bar">
-              <input type="text" placeholder="search">
-            </div>
-
-            <div class="right-side">
-              <i class='bx bx-bell' ></i>
-              <i class='bx bx-envelope' ></i>
-              <div class="profile">
-                <img src="./global-images/IMG_5628.HEIC">
-                <div class="selector">
-                  <h3 class="ah-headline">
-                      <span class="ah-words-wrapper">
-                          <b class="is-visible">Hi everyone, I'm</b>
-                          <b>Rushabh gadhiya</b>
-                      </span>
-                  </h3>
-              </div>
-            </div>
-            </div>
-          </nav>
-         </header>
-          <!--------------- D A S H - B O A R D -------------->
-          <div id="dashboard">
-            
-<!-- formater-section -->
-
-            <div class="formater-section">
-                   <div class="formater" >
-                    <h1>default</h1>
-                    <div class="formater-box">
-                      <i class='bx bxs-home' style='color:#fffdfd'  ></i>
-                      <h2>/ dashboard / default</h2>
-                    </div>
-                   </div>
-                   <div class="filters" >
-                    <h4>new</h4>
-                    <h4>filters</h4>
-                   </div>
-            </div>
-
-           <!--------------- P E R F O R M A N C E - S E C T I O N -------------->
-
-           <div id="performance-section">
-
-            <!-- card-1 -->
-            <div class="card" >
-              <div class="content">
-                <div>
-                  <p>
-                  total
-                  <br>
-                  traffic <br>
-                  <br>
-                  <h4>350,897</h4>
-                </p>
-                </div>
-                <i class='bx bxs-hand-up'></i>
-              </div>
-              <div class="profits-range">
-                <i class='bx bx-up-arrow-alt' ></i>
-                <p class="range-up">5.38%</p>
-                <p>since last month</p>
-              </div>
-            </div>
-
-            <!-- card-2 -->
-            <div class="card" >
-              <div class="content">
-                <div>
-                  <p>
-                  total
-                  <br>
-                  traffic <br>
-                  <br>
-                  <h4>350,897</h4>
-                </p>
-                </div>
-                <i class='bx bxs-pie-chart-alt-2' ></i>
-              </div>
-              <div class="profits-range">
-                <i class='bx bx-up-arrow-alt' ></i>
-                <p class="range-up">5.38%</p>
-                <p>since last month</p>
-              </div>
-            </div>
-
-            <!-- card-3 -->
-            <div class="card" >
-              <div class="content">
-                <div>
-                  <p>
-                  total
-                  <br>
-                  traffic <br>
-                  <br>
-                  <h4>350,897</h4>
-                </p>
-                </div>
-                <i class='bx bx-line-chart' ></i>
-              </div>
-              <div class="profits-range">
-                <i class='bx bx-up-arrow-alt' ></i>
-                <p class="range-up">5.38%</p>
-                <p>since last month</p>
-              </div>
-            </div>
-
-            <!-- card-4 -->
-            <div class="card" >
-              <div class="content">
-                <div>
-                  <p>
-                  total
-                  <br>
-                  traffic <br>
-                  <br>
-                  <h4>350,897</h4>
-                </p>
-                </div>
-                <i class='bx bxs-bar-chart-alt-2' ></i>
-              </div>
-              <div class="profits-range">
-                <i class='bx bx-up-arrow-alt' ></i>
-                <p class="range-up">5.38%</p>
-                <p>since last month</p>
-              </div>
-            </div>
-           </div>
-
-           <!-- charts -->
-
-          <div id="charts">
-            <div id="chart1"></div>
-            <div id="chart2"></div>
-        </div>
-       
-        
-        <!----------------------- V I S I T O R S - T A B L E S -------------------->
-        <div id="tables-calander">
-        <div id="page-visitor">
-          <div class="visitors-page-heading">
-            <h2>page visit</h2>
-            <p>see all</p>
-          </div>
-          <div class="visitor-content-heading">
-            <p>page name</p>
-            <p>visitor</p>
-            <p>users</p>
-            <p>bounce rate</p>
-          </div>
-          <div class="visitor-content">
-
-            <!-- info-1 -->
-            <div class="visitors-info">
-            <p>lorem ipsum</p>
-            <p>4,569</p>
-            <p>340</p>
-            <div class="bounce-rate">
-              <i class='bx bx-up-arrow-alt' ></i>
-                <span class="range-up">5.38%</span>
-            </div>
-          </div>
-
-            <!-- info-1 -->
-            <div class="visitors-info">
-            <p>lorem ipsum</p>
-            <p>4,569</p>
-            <p>340</p>
-            <div class="bounce-rate">
-              <i class='bx bx-up-arrow-alt' ></i>
-                <span class="range-up">5.38%</span>
-            </div>
-          </div>
-
-            <!-- info-1 -->
-            <div class="visitors-info">
-            <p>lorem ipsum</p>
-            <p>4,569</p>
-            <p>340</p>
-            <div class="bounce-rate">
-              <i class='bx bx-up-arrow-alt' ></i>
-                <span class="range-up">5.38%</span>
-            </div>
-          </div>
-
-            <!-- info-1 -->
-            <div class="visitors-info">
-            <p>lorem ipsum</p>
-            <p>4,569</p>
-            <p>340</p>
-            <div class="bounce-rate">
-              <i class='bx bx-up-arrow-alt' ></i>
-                <span class="range-up">5.38%</span>
-            </div>
-          </div>
-
-            <!-- info-1 -->
-            <div class="visitors-info">
-            <p>lorem ipsum</p>
-            <p>4,569</p>
-            <p>340</p>
-            <div class="bounce-rate">
-              <i class='bx bx-up-arrow-alt' ></i>
-                <span class="range-up">5.38%</span>
-            </div>
-          </div>
-
-            <!-- info-1 -->
-            <div class="visitors-info">
-            <p>lorem ipsum</p>
-            <p>4,569</p>
-            <p>340</p>
-            <div class="bounce-rate">
-              <i class='bx bx-up-arrow-alt' ></i>
-                <span class="range-up">5.38%</span>
-            </div>
-          </div>
-
-            <!-- info-1 -->
-            <div class="visitors-info">
-            <p>lorem ipsum</p>
-            <p>4,569</p>
-            <p>340</p>
-            <div class="bounce-rate">
-              <i class='bx bx-up-arrow-alt' ></i>
-                <span class="range-up">5.38%</span>
-            </div>
-          </div>
-        </div>
-
-            </div>
-          
-           <!----------------- C A L A N D E R ------------------->
-           <div id='calendar'></div>
-          </div>
-        </div>
-      
-
-    <!------------------------------------------ U S E R ----------------------------------------->
-
-    
-
-              <div id="user">
-
-                <!----------------- C O V E R - I M A G E ------------------->
-
-                <div class="background-image">
-                  <div class="about-content">
-                   <h1>hello rushabh</h1>
-                   <p>This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
-                   <button>edit profile</button>
-                 </div>
-                </div>
-
-                <!----------------- U S E R - I N F O ------------------->
-                <div id="main-profile">
-                <div id="user-info-form">
-                  <div class="user-info-heading">
-                    <h2>edit profile</h2>
-                    <button>setting</button>
-                  </div>
-
-                  <div class="user-information">
-                    <h2>user information</h2>
-                    <form action="#">
-
-                      <div>
-                      <label>username</label>
-                      <input type="text" value="Rush@bh-9102" placeholder="username">
-                    </div>
-
-                    <div>
-                      <label>email address</label>
-                      <input type="email" value="rushabhgadhiya@gmail.com" placeholder="email">
-                    </div>
-
-                    <div>
-                      <label>firstname</label>
-                      <input type="text" value="Rushabh" placeholder="firstname">
-                    </div>
-
-                    <div>
-                      <label>lastname</label>
-                      <input type="text" value="Gadhiya" placeholder="lastname">
-                    </div>
-                    </form>
-                  </div>
-
-                  <div class="contact-information">
-                    <h2>
-                      contact information
-                    </h2>
-                    <form action="#">
-                     <div>
-                      <label>address</label>
-                      <input type="text" value="7,nand-bunglows,chapre-road,navsari" placeholder="address">
-                    </div>
-
-                    <div>
-                      <label>city</label>
-                      <input type="text" value="navsari" placeholder="city">
-                    </div>
-
-                    <div>
-                      <label>country</label>
-                      <input type="text" value="india" placeholder="country">
-                    </div>
-
-                    <div>
-                      <label>postal code</label>
-                      <input type="text" value="postal code" placeholder="postal code">
-                    </div>
-                    </form>
-                  </div>
-                </div>
-                  <!------------------- P R O F I L E - C A R D --------------------->
-
-                  
-                    <div class="profile-card">
-                        <img src="./global-images/IMG_5628.HEIC" alt="profile-photo"> <br>
-                        <div class="profile-content">
-                            <h2>i'm rushabh gadhiya</h2> <br>
-                            <h3>a full stack developer</h3> <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea nostrum sit eveniet, sequi quos quidem veniam neque ullam. Delectus, quibusdam asperiores. Corrupti officiis, dicta dolorum id temporibus dolore accusantium!</p>
-                        </div>
-                    </div>
-                </div>
-
-              </div>
-
-               <!------------------------------------------ M E S S A G E S  ----------------------------------------->
-
-               <div id="messages">
- 
-                   <!-------------------- C O N V E R S A T I O N ---------------------->
-                   <div id="main-conversation-section">
-
-                    <div class="message-heading">
-                      <h2>conversation</h2>
-                      <div class="search-bar">
-                        <input type="text" placeholder="search">
-                      </div>
-                    </div>
-                   
-                     <!----------- P E R S O N - 1 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 2 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 3 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 4 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 5 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 6 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 7 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 8 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 9 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-                     <!----------- P E R S O N - 10 ---------->
-                     <div class="people-list">
-                      <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                      <div class="list-content">
-                        <h3>gerald dean</h3>
-                        <p>i am ready</p>
-                      </div>
-                     </div>
-        
-                   </div>
-
-                   <div id="chat-section">
-                          <div class="chat-heading">
-                            <div class="chat-name">
-                              <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                              <div class="chat-content">
-                                <h3>gerald dean</h3>
-                                <p>online</p>
-                              </div>
-                             </div>
-
-                             <div class="chat-icons">
-                              <i class='bx bx-video'></i>
-                              <i class='bx bx-phone' ></i>
-                             </div>
-                          </div>
-
-                          <!-- messages - chat -->
-
-                          <div class="chat-message">
-                            <div class="chat-name">
-                              <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                              <div class="chat-message-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum ab quidem veniam impedit reprehenderit ipsam maxime, repellendus quam aut asperiores autem beatae quod animi culpa.</p>
-                              </div>
-                             </div>
-
-                             <!--  -->
-                            <div class="chat-name-2">
-                              <div class="chat-message-content-2">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum ab quidem veniam impedit reprehenderit ipsam maxime, repellendus quam aut asperiores autem beatae quod animi culpa.</p>
-                              </div>
-                              <img src="./global-images/IMG_5628.HEIC" alt="person-photo">
-                             </div>
-
-                             <!--  -->
-                            <div class="chat-name">
-                              <img src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13" alt="person-photo">
-                              <div class="chat-message-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum ab quidem veniam impedit reprehenderit ipsam maxime, repellendus quam aut asperiores autem beatae quod animi culpa.</p>
-                              </div>
-                             </div>
-
-                             <!--  -->
-                            <div class="chat-name-2">
-                              <div class="chat-message-content-2">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum ab quidem veniam impedit reprehenderit ipsam maxime, repellendus quam aut asperiores autem beatae quod animi culpa.</p>
-                              </div>
-                              <img src="./global-images/IMG_5628.HEIC" alt="person-photo">
-
-                             </div>
-                          </div>
-                   </div>
-
-               </div>
-            </div>
-            </div>
-          </div>
+      <!-- button-2 -->
+      <div class="nav-button">
+        <i class='bx bx-user' for="#user"></i>
+        <span class="btnNameHide" for="#user">user</span>
+      </div>
+      <!-- button-3 -->
+      <div class="nav-button">
+        <i class='bx bx-chat' for="#messages"></i>
+        <span class="btnNameHide" for="#messages">message</span>
+      </div>
+      <!-- button-4 -->
+      <div class="nav-button">
+        <i class='bx bx-network-chart' for="#analysis"></i>
+        <span class="btnNameHide" for="#analysis">analysis</span>
+      </div>
+      <!-- button-5 -->
+      <div class="nav-button">
+        <i class='bx bx-folder'></i>
+        <span class="btnNameHide">flies</span>
+      </div>
+      <!-- button-6 -->
+      <div class="nav-button">
+        <i class='bx bx-cart-alt'></i>
+        <span class="btnNameHide">order</span>
+      </div>
+      <!-- button-7 -->
+      <div class="nav-button">
+        <i class='bx bx-heart'></i>
+        <span class="btnNameHide">saved</span>
+      </div>
+      <!-- button-8 -->
+      <div class="nav-button">
+        <i class='bx bx-cog'></i>
+        <span class="btnNameHide">setting</span>
+      </div>
+      <!-- button-9 -->
+      <div class="nav-button">
+        <i class='bx bx-log-in'></i>
+        <span class="btnNameHide">sign up</span>
       </div>
     </div>
 
-    <!------------------------------------------ S C R I P T S ----------------------------------------->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="./scripts/calander.js"></script>
-    <script src="./scripts/dashboard.js"></script>
-  </body>
+
+
+    <!-------------------------------------- M A I N - C O N T E N T ----------------------------------->
+    <div id="main-content">
+      <!-- T A S K B A R -->
+      <header>
+        <nav id="task-bar">
+          <div class="left-side">
+            <h1>dashboard</h1>
+          </div>
+          <!-- search -->
+          <div class="search-bar">
+            <input type="text" placeholder="search">
+          </div>
+
+          <div class="right-side">
+            <i class='bx bx-bell'></i>
+            <i class='bx bx-envelope'></i>
+            <div class="profile">
+              <img src="./global-images/IMG_5628.HEIC">
+              <div class="selector">
+                <h3 class="ah-headline">
+                  <span class="ah-words-wrapper">
+                    <b class="is-visible">Hi everyone, I'm</b>
+                    <b>Rushabh gadhiya</b>
+                  </span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--------------- D A S H - B O A R D -------------->
+      <div id="dashboard">
+
+        <!-- formater-section -->
+
+        <div class="formater-section">
+          <div class="formater">
+            <h1>default</h1>
+            <div class="formater-box">
+              <i class='bx bxs-home' style='color:#fffdfd'></i>
+              <h2>/ dashboard / default</h2>
+            </div>
+          </div>
+          <div class="filters">
+            <h4>new</h4>
+            <h4>filters</h4>
+          </div>
+        </div>
+
+        <!--------------- P E R F O R M A N C E - S E C T I O N -------------->
+
+        <div id="performance-section">
+
+          <!-- card-1 -->
+          <div class="card">
+            <div class="content">
+              <div>
+                <p>
+                  total
+                  <br>
+                  traffic <br>
+                  <br>
+                <h4>350,897</h4>
+                </p>
+              </div>
+              <i class='bx bxs-hand-up'></i>
+            </div>
+            <div class="profits-range">
+              <i class='bx bx-up-arrow-alt'></i>
+              <p class="range-up">5.38%</p>
+              <p>since last month</p>
+            </div>
+          </div>
+
+          <!-- card-2 -->
+          <div class="card">
+            <div class="content">
+              <div>
+                <p>
+                  total
+                  <br>
+                  traffic <br>
+                  <br>
+                <h4>350,897</h4>
+                </p>
+              </div>
+              <i class='bx bxs-pie-chart-alt-2'></i>
+            </div>
+            <div class="profits-range">
+              <i class='bx bx-up-arrow-alt'></i>
+              <p class="range-up">5.38%</p>
+              <p>since last month</p>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="card">
+            <div class="content">
+              <div>
+                <p>
+                  total
+                  <br>
+                  traffic <br>
+                  <br>
+                <h4>350,897</h4>
+                </p>
+              </div>
+              <i class='bx bx-line-chart'></i>
+            </div>
+            <div class="profits-range">
+              <i class='bx bx-up-arrow-alt'></i>
+              <p class="range-up">5.38%</p>
+              <p>since last month</p>
+            </div>
+          </div>
+
+          <!-- card-4 -->
+          <div class="card">
+            <div class="content">
+              <div>
+                <p>
+                  total
+                  <br>
+                  traffic <br>
+                  <br>
+                <h4>350,897</h4>
+                </p>
+              </div>
+              <i class='bx bxs-bar-chart-alt-2'></i>
+            </div>
+            <div class="profits-range">
+              <i class='bx bx-up-arrow-alt'></i>
+              <p class="range-up">5.38%</p>
+              <p>since last month</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- charts -->
+
+        <div id="charts">
+          <div id="chart1"></div>
+          <div id="chart2"></div>
+        </div>
+
+
+        <!----------------------- V I S I T O R S - T A B L E S -------------------->
+        <div id="tables-calander">
+          <div id="page-visitor">
+            <div class="visitors-page-heading">
+              <h2>page visit</h2>
+              <p>see all</p>
+            </div>
+            <div class="visitor-content-heading">
+              <p>page name</p>
+              <p>visitor</p>
+              <p>users</p>
+              <p>bounce rate</p>
+            </div>
+            <div class="visitor-content">
+
+              <!-- info-1 -->
+              <div class="visitors-info">
+                <p>lorem ipsum</p>
+                <p>4,569</p>
+                <p>340</p>
+                <div class="bounce-rate">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="range-up">5.38%</span>
+                </div>
+              </div>
+
+              <!-- info-1 -->
+              <div class="visitors-info">
+                <p>lorem ipsum</p>
+                <p>4,569</p>
+                <p>340</p>
+                <div class="bounce-rate">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="range-up">5.38%</span>
+                </div>
+              </div>
+
+              <!-- info-1 -->
+              <div class="visitors-info">
+                <p>lorem ipsum</p>
+                <p>4,569</p>
+                <p>340</p>
+                <div class="bounce-rate">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="range-up">5.38%</span>
+                </div>
+              </div>
+
+              <!-- info-1 -->
+              <div class="visitors-info">
+                <p>lorem ipsum</p>
+                <p>4,569</p>
+                <p>340</p>
+                <div class="bounce-rate">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="range-up">5.38%</span>
+                </div>
+              </div>
+
+              <!-- info-1 -->
+              <div class="visitors-info">
+                <p>lorem ipsum</p>
+                <p>4,569</p>
+                <p>340</p>
+                <div class="bounce-rate">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="range-up">5.38%</span>
+                </div>
+              </div>
+
+              <!-- info-1 -->
+              <div class="visitors-info">
+                <p>lorem ipsum</p>
+                <p>4,569</p>
+                <p>340</p>
+                <div class="bounce-rate">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="range-up">5.38%</span>
+                </div>
+              </div>
+
+              <!-- info-1 -->
+              <div class="visitors-info">
+                <p>lorem ipsum</p>
+                <p>4,569</p>
+                <p>340</p>
+                <div class="bounce-rate">
+                  <i class='bx bx-up-arrow-alt'></i>
+                  <span class="range-up">5.38%</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!----------------- C A L A N D E R ------------------->
+          <div id='calendar'></div>
+        </div>
+      </div>
+
+
+      <!------------------------------------------ U S E R ----------------------------------------->
+
+
+
+      <div id="user">
+
+        <!----------------- C O V E R - I M A G E ------------------->
+
+        <div class="background-image">
+          <div class="about-content">
+            <h1>hello rushabh</h1>
+            <p>This is your profile page. You can see the progress you've made with your work and manage your projects
+              or assigned tasks</p>
+            <button>edit profile</button>
+          </div>
+        </div>
+
+        <!----------------- U S E R - I N F O ------------------->
+        <div id="main-profile">
+          <div id="user-info-form">
+            <div class="user-info-heading">
+              <h2>edit profile</h2>
+              <button>setting</button>
+            </div>
+
+            <div class="user-information">
+              <h2>user information</h2>
+              <form action="#">
+
+                <div>
+                  <label>username</label>
+                  <input type="text" value="Rush@bh-9102" placeholder="username">
+                </div>
+
+                <div>
+                  <label>email address</label>
+                  <input type="email" value="rushabhgadhiya@gmail.com" placeholder="email">
+                </div>
+
+                <div>
+                  <label>firstname</label>
+                  <input type="text" value="Rushabh" placeholder="firstname">
+                </div>
+
+                <div>
+                  <label>lastname</label>
+                  <input type="text" value="Gadhiya" placeholder="lastname">
+                </div>
+              </form>
+            </div>
+
+            <div class="contact-information">
+              <h2>
+                contact information
+              </h2>
+              <form action="#">
+                <div>
+                  <label>address</label>
+                  <input type="text" value="7,nand-bunglows,chapre-road,navsari" placeholder="address">
+                </div>
+
+                <div>
+                  <label>city</label>
+                  <input type="text" value="navsari" placeholder="city">
+                </div>
+
+                <div>
+                  <label>country</label>
+                  <input type="text" value="india" placeholder="country">
+                </div>
+
+                <div>
+                  <label>postal code</label>
+                  <input type="text" value="postal code" placeholder="postal code">
+                </div>
+              </form>
+            </div>
+          </div>
+          <!------------------- P R O F I L E - C A R D --------------------->
+
+
+          <div class="profile-card">
+            <img src="./global-images/IMG_5628.HEIC" alt="profile-photo"> <br>
+            <div class="profile-content">
+              <h2>i'm rushabh gadhiya</h2> <br>
+              <h3>a full stack developer</h3> <br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea nostrum sit eveniet, sequi quos
+                quidem veniam neque ullam. Delectus, quibusdam asperiores. Corrupti officiis, dicta dolorum id
+                temporibus dolore accusantium!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!------------------------------------------ M E S S A G E S  ----------------------------------------->
+
+      <div id="messages">
+
+        <!-------------------- C O N V E R S A T I O N ---------------------->
+        <div id="main-conversation-section">
+
+          <div class="message-heading">
+            <h2>conversation</h2>
+            <div class="search-bar">
+              <input type="text" placeholder="search">
+            </div>
+          </div>
+
+          <!----------- P E R S O N - 1 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 2 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 3 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 4 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 5 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 6 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 7 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 8 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 9 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+          <!----------- P E R S O N - 10 ---------->
+          <div class="people-list">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+              alt="person-photo">
+            <div class="list-content">
+              <h3>gerald dean</h3>
+              <p>i am ready</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="chat-section">
+          <div class="chat-heading">
+            <div class="chat-name">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+                alt="person-photo">
+              <div class="chat-content">
+                <h3>gerald dean</h3>
+                <p>online</p>
+              </div>
+            </div>
+
+            <div class="chat-icons">
+              <i class='bx bx-video'></i>
+              <i class='bx bx-phone'></i>
+            </div>
+          </div>
+
+          <!-- messages - chat -->
+
+          <div class="chat-message">
+
+            <!-- chat-1 -->
+            <div class="chat-name">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+                alt="person-photo">
+              <div class="chat-message-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum ab
+                  quidem veniam impedit reprehenderit ipsam maxime, repellendus quam aut asperiores autem beatae quod
+                  animi culpa.</p>
+              </div>
+            </div>
+
+            <!-- chat-2 -->
+            <div class="chat-name-2">
+              <div class="chat-message-content-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum ab
+                  quidem veniam impedit reprehenderit ipsam maxime, repellendus quam aut asperiores autem beatae quod
+                  animi culpa.</p>
+              </div>
+              <img src="./global-images/IMG_5628.HEIC" alt="person-photo">
+            </div>
+
+            <!-- chat-3 -->
+            <div class="chat-name">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
+                alt="person-photo">
+              <div class="chat-message-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum ab
+                  quidem veniam impedit reprehenderit ipsam maxime, repellendus quam aut asperiores autem beatae quod
+                  animi culpa.</p>
+              </div>
+            </div>
+
+            <!-- chat-4 -->
+            <div class="chat-name-2">
+              <div class="chat-message-content-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum ab
+                  quidem veniam impedit reprehenderit ipsam maxime, repellendus quam aut asperiores autem beatae quod
+                  animi culpa.</p>
+              </div>
+              <img src="./global-images/IMG_5628.HEIC" alt="person-photo">
+
+            </div>
+          </div>
+
+          <!-- chat-input -->
+          <div id="chat-input">
+            <i class='bx bx-plus'></i>
+            <input type="text">
+            <i class='bx bx-send' ></i>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------------- A N A L Y S I S -S E C T I O N -------------------------------->
+
+      <div id="analysis">
+        <div class="first-row">
+        <div id="analysis-chart-1"></div>
+        <div id="analysis-chart-2"></div>
+        <div id="analysis-chart-3"></div>
+      </div>
+
+      <div class="second-row">
+        <div id="analysis-chart-4"></div>
+        <div id="analysis-chart-5"></div>
+      </div>
+
+      <div class="third-row">
+        <div id="analysis-chart-6"></div>
+        <div id="analysis-chart-7"></div>
+      </div>
+      </div>
+
+
+      <!------------------------------------ M A I N - C O N T E N T - E N D ---------------------------------------------------------->
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!------------------------------------------ S C R I P T S ----------------------------------------->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="./scripts/calander.js"></script>
+  <script src="./scripts/dashboard.js"></script>
+  <script src="./scripts/analysis.js"></script>
+</body>
+
 </html>
