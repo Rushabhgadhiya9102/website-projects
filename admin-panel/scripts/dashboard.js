@@ -12,7 +12,7 @@ function sidebarCustomization() {
     $(".btnNameHide").css("display", "none");
   } else {
     $("#side-bar").css("width", "20%");
-    $(".btnNameHide").css("display", "block" );
+    $(".btnNameHide").css("display", "block");
   }
 }
 

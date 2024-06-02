@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 
-body{
-  background-image: url('bg-1.png');
+body {
+  background-image: url("bg-1.png");
   background-size: cover;
-  
 }
 
 #villain-container {
@@ -60,7 +59,11 @@ body{
   width: 95%;
   height: 100vh;
   overflow-y: scroll;
-  background-image: linear-gradient(to bottom, rgb(211, 244, 255), rgb(211, 255, 255));
+  background-image: linear-gradient(
+    to bottom,
+    rgb(211, 244, 255),
+    rgb(211, 255, 255)
+  );
 }
 
 /* ------------- T A S K B A R -------------- */
