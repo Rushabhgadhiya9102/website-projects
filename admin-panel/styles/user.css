@@ -9,7 +9,7 @@
 /* ------------------ C O V E R - I M A G E ------------------- */
 
 .background-image {
-  margin-top: 50px;
+  margin-top: 20px;
   height: 600px;
   background-image: url(../global-images/editing\ file\ 2.jpg);
   background-position: center;
@@ -103,7 +103,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   flex-wrap: wrap;
 }
 

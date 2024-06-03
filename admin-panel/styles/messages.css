@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#messages {
+#chat-wrapper {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -35,7 +35,7 @@
   width: 100%;
   color: white;
   text-transform: capitalize;
-  background-image: linear-gradient(to bottom, lightblue, lightseagreen);
+  background-image: linear-gradient(to bottom, blue, lightseagreen);
 }
 
 .people-list {
