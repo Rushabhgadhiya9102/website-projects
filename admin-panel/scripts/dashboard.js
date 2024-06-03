@@ -22,19 +22,19 @@ $(".bx-menu").on("click", function () {
 
 //-------- N A V I G A T I O N - C H A N G E S ---------
 
-$("#user,#messages,#analysis,#icons,#register").hide();
+$("#user,#messages,#analysis,#files,#order,#register").hide();
 
 // ----buttons----
 
 $(".nav-button>span").on("click", function () {
-  $("#dashboard,#user,#messages,#analysis,#icons,#register").hide();
+  $("#dashboard,#user,#messages,#analysis,#files,#order,#register").hide();
   $($(this).attr("for")).show();
 });
 
 //----icons----
 
 $(".nav-button>i").on("click", function () {
-  $("#dashboard,#user,#messages,#analysis,#icons,#register").hide();
+  $("#dashboard,#user,#messages,#analysis,#files,#order,#register").hide();
   $($(this).attr("for")).show();
 });
 
