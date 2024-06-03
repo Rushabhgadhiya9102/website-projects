@@ -1,113 +1,113 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 #files-storage-section {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
-    flex-wrap: wrap;
-  }
-  
-  .file-card {
-    width: 20%;
-    height: 20%;
-    border-radius: 10px;
-    text-transform: capitalize;
-    flex-wrap: wrap;
-    font-size: larger;
-    background-color: rgb(234, 234, 234);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  }
-  
-  .file-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 30px;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
 
-  #file-range-1,
-  #file-range-2,
-  #file-range-3,
-  #file-range-4 {
-    height: 150px;
-    width: 150px;
-  }
-
-  .bxl-android{
-    background-color: yellow;
-    font-size: xx-large;
-    padding: 10px;
-    color: white;
-    border-radius: 50%;
-  }
-
-  .bx-file{
-    background-color: blue;
-    font-size: xx-large;
-    padding: 10px;
-    color: white;
-    border-radius: 50%;
-  }
-
-  .bxs-file-json{
-    background-color: green;
-    font-size: xx-large;
-    padding: 10px;
-    color: white;
-    border-radius: 50%; 
-  }
-
-  .bxs-videos{
-    background-color: purple;
-    font-size: xx-large;
-    padding: 10px;
-    color: white;
-    border-radius: 50%;
-  }
-
-  /* file-manager-boxes */
-
-  #files-manager-boxes{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-  }
-
-  /* file-wrapper */
-
-  #flies-wrapper{
-    width: 95%;
-    height: auto;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+.file-card {
+  width: 20%;
+  height: 20%;
+  border-radius: 10px;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+  font-size: larger;
+  background-color: rgb(234, 234, 234);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  }
-  
-  /* file-heading */
+}
 
-  .files-heading{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    padding: 20px 0px;
-    font-size: larger;
-    gap: 140px;
-    text-transform: capitalize;
-  }
+.file-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
 
-  /* main-files */
+#file-range-1,
+#file-range-2,
+#file-range-3,
+#file-range-4 {
+  height: 150px;
+  width: 150px;
+}
 
-  .main-files{
-    display: flex;
-    background-color: whitesmoke;
-    font-size: larger;
-    padding: 20px;
-    justify-content: center;
-    gap: 130px;
-  }
+.bxl-android {
+  background-color: yellow;
+  font-size: xx-large;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+
+.bx-file {
+  background-color: blue;
+  font-size: xx-large;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+
+.bxs-file-json {
+  background-color: green;
+  font-size: xx-large;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+
+.bxs-videos {
+  background-color: purple;
+  font-size: xx-large;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+
+/* file-manager-boxes */
+
+#files-manager-boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* file-wrapper */
+
+#flies-wrapper {
+  width: 95%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* file-heading */
+
+.files-heading {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 0px;
+  font-size: larger;
+  gap: 140px;
+  text-transform: capitalize;
+}
+
+/* main-files */
+
+.main-files {
+  display: flex;
+  background-color: whitesmoke;
+  font-size: larger;
+  padding: 20px;
+  justify-content: center;
+  gap: 130px;
+}
