@@ -226,12 +226,13 @@ input {
   gap: 5px;
 }
 
-.range-up {
-  color: green;
-}
 
 .bx-up-arrow-alt {
   color: green;
+}
+
+.bx-down-arrow-alt{
+  color: red;
 }
 
 /* -------------------- C H A R T S ---------------------- */
@@ -333,4 +334,21 @@ input {
   opacity: 100% !important;
   color: yellowgreen !important;
   font-weight: bold !important;
+}
+
+/* ----------------- M A P ----------------- */
+
+.map-location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+iframe{
+  border-radius: 20px;
+  border: none;
+  height: 80%;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
