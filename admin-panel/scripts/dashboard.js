@@ -22,19 +22,19 @@ $(".bx-menu").on("click", function () {
 
 //-------- N A V I G A T I O N - C H A N G E S ---------
 
-$("#user,#messages,#analysis,#files,#order,#map,#register").hide();
+$("#user,#messages,#analysis,#files,#order,#map,#setting,#register").hide();
 
 // ----buttons----
 
 $(".nav-button>span").on("click", function () {
-  $("#dashboard,#user,#messages,#analysis,#files,#order,#map,#register").hide();
+  $("#dashboard,#user,#messages,#analysis,#files,#order,#map,#setting,#register").hide();
   $($(this).attr("for")).show();
 });
 
 //----icons----
 
 $(".nav-button>i").on("click", function () {
-  $("#dashboard,#user,#messages,#analysis,#files,#order,#map,#register").hide();
+  $("#dashboard,#user,#messages,#analysis,#files,#order,#map,#setting,#register").hide();
   $($(this).attr("for")).show();
 });
 
@@ -210,3 +210,24 @@ $(function () {
     animationType: "type",
   });
 });
+
+
+// --------------- L O G I N - P A G E  ------------------
+
+
+$(document).ready(function(){
+  $('.sign-up').hide();
+
+     
+  $('.btn-1').on('click',function(){
+  $('.sign-in').hide(150);    
+  $('.sign-up').show(150);    
+  $('.form-main-banner').addClass('.sign-up');    
+  });
+
+  $('.btn-2').on('click',function(){
+    $('.sign-up').hide(150);    
+  $('.sign-in').show(150); 
+    $('.form-main-banner').removeClass('.sign-up');     
+  });
+})

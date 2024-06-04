@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.setting-wrapper{
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.setting-wrapper i{
+  font-size: xx-large;
+}
+
+.setting-wrapper h1{
+    padding: 20px;
+}
+
+.system-content{
+    display: flex;
+    gap: 40px;
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+}
+

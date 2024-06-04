@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* ------------ L O G I N - F O R M ------------- */
+  
+  .form-main-banner{
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+  }
+  
+  .login-out-page{
+    margin: auto;
+    display: flex;
+    background-image: linear-gradient(to left, blue, lightseagreen);
+    backdrop-filter: 20px;
+    border-radius: 20px;
+    width: 900px;
+    overflow: hidden;
+  }
+  
+  .sign-in{
+    width: 900px;
+    height: 450px;
+    display: flex;
+  }
+  
+  .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 450px;
+    height: 450px;
+  }
+  
+  .login-icons{
+    display: flex;
+    gap: 30px;
+    user-select: none;
+  }
+  
+  input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  
+  .sign-in button{
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  /* sign-up */
+  
+  .sign-up{
+    width: 900px;
+    height: 450px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .sign-up button{
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  .image-1{
+    background-image: url('../global-images/IMG_5628.HEIC');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    color: white;
+  }
+  
+  .form-content{
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: larger;
+    padding: 0px 40px;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.652);
+  }
+  
+  .image-2{
+    background-image: url('../global-images/editing\ file\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    color: white; 
+  }
+  
+  .btn-1, .btn-2{
+    border: 1px solid #ffffff;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
