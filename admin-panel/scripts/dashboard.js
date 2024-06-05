@@ -23,6 +23,8 @@ $(".bx-menu").on("click", function () {
 
 $(".bx-menu-alt-left").on("click",function(){
   $("#side-bar").css("display","visible");
+  $("#side-bar").css("width","200px")
+  $(".btnNameHide").show();
   $("#side-bar").toggle()
 })
 
