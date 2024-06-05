@@ -1,39 +1,15 @@
-// -------------------- S I D E B A R -----------------
-
-
-$(".btnNameHide").hide();
-
+// ----------------------------------- S I D E B A R ------------------------------------
 
 $("#side-bar").css("width", "5%");
-
-window.onresize = function(){
- 
-if(visualViewport.width <= 600){
-
-  $("#side-bar").css("width", "20%");
-}else{
-  $("#side-bar").css("width", "5%");
-}
-}
-
-
-
+$(".btnNameHide").hide();
 let sideBar = true;
-
 function sidebarCustomization() {
   sideBar = !sideBar;
   if (sideBar) {
-    if(visualViewport.width <= 600){
-      $("#side-bar").css("width", "20%");
-    }else{
-      $("#side-bar").css("width", "5%");
-    }
+    $("#side-bar").css("width", "5%");
     $(".btnNameHide").css("display", "none");
   } else {
-    
-    if(visualViewport.width >=600){
-      $("#side-bar").css("width", "20%");
-    }
+    $("#side-bar").css("width", "20%");
     $(".btnNameHide").css("display", "block");
   }
 }
@@ -42,7 +18,15 @@ $(".bx-menu").on("click", function () {
   sidebarCustomization();
 });
 
-//-------- N A V I G A T I O N - C H A N G E S ---------
+
+// --------------------- media-query ----------------------
+
+$(".bx-menu-alt-left").on("click",function(){
+  $("#side-bar").css("display","visible");
+  $("#side-bar").toggle()
+})
+
+//-------------------------- N A V I G A T I O N - C H A N G E S --------------------------
 
 $("#user,#messages,#analysis,#files,#order,#map,#setting,#register").hide();
 
@@ -60,7 +44,7 @@ $(".nav-button>i").on("click", function () {
   $($(this).attr("for")).show();
 });
 
-// --------------- C H A R T S -----------------
+// --------------------------------- C H A R T S ---------------------------------------
 
 //chart-1//
 var options = {
@@ -424,7 +408,7 @@ var optionsLine = {
         const newData2 = chartCtx.w.config.series[1].data.slice()
         newData2.shift()
 
-        // check animation end event for just 1 series to avoid multiple updates
+        
         if (opts.el.node.getAttribute('index') === '0') {
           window.setTimeout(function () {
             chartCtx.updateOptions({
@@ -541,7 +525,7 @@ var optionsCircle = {
         background: '#40475D',
         strokeWidth: '10%',
         opacity: 1,
-        margin: 3, // margin is in pixels
+        margin: 3, 
       },
 
 
@@ -827,7 +811,7 @@ window.setInterval(function () {
 var calendarInstance1 = new calendarJs("calendar", {
   manualEditingEnabled: true,
 });
-//------------- H E A D L I N E J S -------------
+//----------------------------------- H E A D L I N E - J S -----------------------------------
 
 $(function () {
   $(".selector").animatedHeadline({

@@ -1,19 +1,29 @@
 @media(max-width:600px){
 
+ #villain-container{
+  overflow-y: hidden;
+ }
+
     /* ----------------- T S A K - B A R ------------------ */
   #task-bar{
-    width: 95%;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-around;
   }
 
   .right-side{
    gap: 10px;
-   margin-right: 20px;
-   font-size: medium;
+   /* margin-right: 20px; */
+   font-size: small;
   }
 
   .left-side{
     font-size: larger;
+    margin-left: 50px;
+    align-items: center;
+  }
+
+  .bx-menu-alt-left{
+    display: block;
   }
 
   #task-bar input{
@@ -31,7 +41,20 @@
 /* ------------------------- S I D E - B A R ----------------------- */
 
 #side-bar{
-    font-size: large;
+    width: 200px;
+    display: none;
+    padding-top: 100px;
+    position: absolute;
+    z-index: 11;
+}
+
+#side-bar i, span{
+  font-size: large;
+  margin: 10px 0px 10px;
+}
+
+#main-content{
+  width: 100%;
 }
 
 /* ----------------- D A S H B O A R D --------------------- */
@@ -61,9 +84,15 @@
 
   /*--- CHART-SECTION ---*/
 
-  #charts>div{
+  #chart1,
+  #chart2,
+  #chart3,
+  #chart4,
+  #chart5,
+  #real-time-chart {
     width: 80%;
     height: auto; 
+
   }
     /* TABLES-CALANDER */
 
@@ -75,6 +104,7 @@
     #page-visitor{
         width: 80%;
         height: 10%;
+        margin-bottom: 30px;
     }
 
     #page-visitor h2 , p , i, span{
@@ -83,6 +113,30 @@
 
     /* ------------------ U S E R ------------------- */
 
+   .about-content{
+    margin: 300px 20px 0px;
+   }
 
+   #user-info-form{
+    width: 80%;
+    margin: 40px 0px;
 
+   }
+
+   #user-info-form input{
+    width: 100%;
+   }
+
+   .user-information h2{
+      font-size: large;
+   }
+
+   .user-info-heading button{
+      width: 30px;
+      height: 30px;
+   }
+
+   .profile-card{
+    display: none;
+   }
   }
