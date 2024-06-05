@@ -1,0 +1,88 @@
+@media(max-width:600px){
+
+    /* ----------------- T S A K - B A R ------------------ */
+  #task-bar{
+    width: 95%;
+    justify-content: space-evenly;
+  }
+
+  .right-side{
+   gap: 10px;
+   margin-right: 20px;
+   font-size: medium;
+  }
+
+  .left-side{
+    font-size: larger;
+  }
+
+  #task-bar input{
+    display: none;
+  }
+  
+  .bx-menu{
+    display: none;
+  }
+
+  .profile{
+    display: none;
+  }
+
+/* ------------------------- S I D E - B A R ----------------------- */
+
+#side-bar{
+    font-size: large;
+}
+
+/* ----------------- D A S H B O A R D --------------------- */
+
+   .formater>h1{
+    display: none;
+   }
+
+   .filters{
+    display: none;
+   }
+
+   .formater{
+    margin-left: 25px;
+   }
+
+   .card{
+    width: 80%;
+    height: 10%;
+    font-size: medium;
+    margin-bottom: 30px;
+   }
+
+  .profits-range{
+     padding-bottom: 20px;
+  }
+
+  /*--- CHART-SECTION ---*/
+
+  #charts>div{
+    width: 80%;
+    height: auto; 
+  }
+    /* TABLES-CALANDER */
+
+    #calendar{
+        width: 80%;
+        height: 10%;
+    }
+
+    #page-visitor{
+        width: 80%;
+        height: 10%;
+    }
+
+    #page-visitor h2 , p , i, span{
+        font-size: small;
+    }
+
+    /* ------------------ U S E R ------------------- */
+
+
+
+  }

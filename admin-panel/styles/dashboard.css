@@ -100,7 +100,7 @@
 
 .right-side {
   display: flex;
-  gap: 5px;
+  gap: 20px;
 }
 
 .right-side img {
@@ -164,6 +164,7 @@ input {
 
 #performance-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 100px;
 }
@@ -226,7 +227,6 @@ input {
   gap: 5px;
 }
 
-
 .bx-up-arrow-alt {
   color: green;
 }
@@ -248,16 +248,24 @@ input {
 }
 
 #chart1,
-#chart2 {
+#chart2,
+#chart3,
+#chart4,
+#chart5,
+#real-time-chart{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.997);
   border-radius: 10px;
   padding: 10px;
   height: 400px;
   width: 600px;
+  color: black;
   background-color: whitesmoke;
   /* background-image: linear-gradient(to bottom, rgb(197, 247, 255), rgb(205, 255, 253)); */
 }
 
+.apexcharts-title-text{
+  color: black !important;
+}
 /* ----------------- V I S I T O R S - T A B L E S ------------------------- */
 
 #page-visitor {
@@ -305,6 +313,7 @@ input {
 
 #tables-calander {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 100px 0px;
 }
