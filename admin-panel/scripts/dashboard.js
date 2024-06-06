@@ -1,5 +1,6 @@
 // ----------------------------------- S I D E B A R ------------------------------------
 
+
 $("#side-bar").css("width", "5%");
 $(".btnNameHide").hide();
 let sideBar = true;
@@ -19,14 +20,6 @@ $(".bx-menu").on("click", function () {
 });
 
 
-// --------------------- media-query ----------------------
-
-$(".bx-menu-alt-left").on("click",function(){
-  $("#side-bar").css("display","visible");
-  $("#side-bar").css("width","200px")
-  $(".btnNameHide").show();
-  $("#side-bar").toggle()
-})
 
 //-------------------------- N A V I G A T I O N - C H A N G E S --------------------------
 
@@ -210,7 +203,7 @@ chart.render();
 
 window.Apex = {
   chart: {
-    foreColor: '#fff',
+    foreColor: '#000000',
     toolbar: {
       show: false
     },
@@ -294,6 +287,7 @@ function getNewData(baseval, yrange) {
 
 var optionsColumn = {
   chart: {
+    "foreColor":"black",
     height: 350,
     type: 'bar',
     animations: {
@@ -370,9 +364,6 @@ var optionsColumn = {
   xaxis: {
     type: 'datetime',
     range: 2700000
-  },
-  legend: {
-    show: true
   },
 }
 
@@ -841,3 +832,40 @@ $(document).ready(function(){
     $('.form-main-banner').removeClass('.sign-up');     
   });
 })
+
+
+// --------------------- M E D I A - Q U E R Y - S I D E B A R ----------------------
+
+if(visualViewport.width <= 600){
+
+  // ----------- side-bar --------------
+  $(".bx-menu-alt-left").on("click",function(){
+    $("#side-bar").css("display","visible");
+    $("#side-bar").css("width","200px")
+    $(".btnNameHide").show();
+    $("#side-bar").toggle()
+  })
+  
+  
+    $(".nav-button>span").on("click", function () {
+      $("#dashboard,#user,#messages,#analysis,#files,#order,#map,#setting,#register").hide();
+      $($(this).attr("for")).show();
+      $("#side-bar").hide();
+    });
+    
+    // ----------- message - section ----------
+    
+    $("#chat-section").hide();
+
+    $(".people-list").on("click",function(){
+      $("#main-conversation-section").hide();
+      $("#chat-section").show();
+      $(".formater-section").hide()
+    })
+
+    $(".chat-name").on("click",function(){
+      $("#main-conversation-section").show();
+      $("#chat-section").hide();
+    })
+   
+  }

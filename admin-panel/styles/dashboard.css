@@ -66,6 +66,10 @@
   );
 }
 
+title{
+  color: black !important;
+}
+
 /* ------------- T A S K B A R -------------- */
 
 #task-bar {
@@ -145,7 +149,7 @@ input {
 .formater-box {
   display: flex;
   gap: 10px;
-  background-image: linear-gradient(to bottom, blue, lightseagreen);
+  background-image: linear-gradient(to right, blue, lightseagreen);
   align-items: center;
   padding: 10px;
   color: white;
