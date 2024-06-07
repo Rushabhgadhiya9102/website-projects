@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./styles/order.css">
   <link rel="stylesheet" href="./styles/login.css">
   <link rel="stylesheet" href="./styles/setting.css">
-  <link rel="stylesheet" href="media-query.css">
+  <link rel="stylesheet" href="./media-query/media-query.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>admin-panel</title>
@@ -24,7 +24,7 @@
 
 <body>
 
-  <!------------------------------------------------------ M A I N - C O N T A I N E R ------------------------------------------------------------>
+  <!------------------------------------------------------ V I L L A I N - C O N T A I N E R ------------------------------------------------------------>
   <div id="villain-container">
 
     <!------------------------------------ S I D E - B A R --------------------------------------->
@@ -32,47 +32,65 @@
     <div id="side-bar">
 
       <i class='bx bx-menu'></i>
-      <!-- button-1 -->
+
+      <!---------- B U T T O N - 1 --------->
+
       <div class="nav-button">
         <i class='bx bxs-dashboard' for="#dashboard"></i>
         <span class="btnNameHide" for="#dashboard">dashboard</span>
       </div>
-      <!-- button-2 -->
+
+      <!---------- B U T T O N - 2 --------->
+      
       <div class="nav-button">
         <i class='bx bx-user' for="#user"></i>
         <span class="btnNameHide" for="#user">user</span>
       </div>
-      <!-- button-3 -->
+
+      <!---------- B U T T O N - 3 --------->
+     
       <div class="nav-button">
         <i class='bx bx-chat' for="#messages"></i>
         <span class="btnNameHide" for="#messages">message</span>
       </div>
-      <!-- button-4 -->
+      
+      <!---------- B U T T O N - 4 --------->
+
       <div class="nav-button">
         <i class='bx bx-network-chart' for="#analysis"></i>
         <span class="btnNameHide" for="#analysis">analysis</span>
       </div>
-      <!-- button-5 -->
+
+      <!---------- B U T T O N - 5 --------->
+      
       <div class="nav-button">
         <i class='bx bx-folder' for="#files"></i>
         <span class="btnNameHide" for="#files">flies</span>
       </div>
-      <!-- button-6 -->
+
+      <!---------- B U T T O N - 6 --------->
+     
       <div class="nav-button">
         <i class='bx bx-cart-alt' for="#order"></i>
         <span class="btnNameHide" for="#order">order</span>
       </div>
-      <!-- button-7 -->
+
+      <!---------- B U T T O N - 7 --------->
+      
       <div class="nav-button">
         <i class='bx bx-map' for="#map"></i>
         <span class="btnNameHide" for="#map">map</span>
       </div>
-      <!-- button-8 -->
+
+      <!---------- B U T T O N - 8 --------->
+      
       <div class="nav-button">
         <i class='bx bx-cog' for="#setting"></i>
         <span class="btnNameHide" for="#setting">setting</span>
       </div>
-      <!-- button-9 -->
+
+      <!---------- B U T T O N - 9 --------->
+      
       <div class="nav-button">
         <i class='bx bx-log-in' for="#register"></i>
         <span class="btnNameHide" for="#register">sign up</span>
@@ -83,7 +101,7 @@
 
     <!-------------------------------------- M A I N - C O N T E N T ----------------------------------->
     <div id="main-content">
-      <!-- T A S K B A R -->
+      <!--------- T A S K B A R -------->
       <header>
         <nav id="task-bar">
           <i class='bx bx-menu-alt-left'></i>
@@ -91,7 +109,9 @@
             <i class='bx bxl-slack'></i>
             <span>vision</span>
           </div>
-          <!-- search -->
+
+          <!------ S E A R C H ------>
+
           <div class="search-bar">
             <input type="text" placeholder="search">
           </div>
@@ -113,10 +133,11 @@
           </div>
         </nav>
       </header>
-      <!--------------- D A S H - B O A R D -------------->
+      <!------------------------------------------ D A S H B O A R D ----------------------------------------->
+      
       <div id="dashboard">
 
-        <!-- formater-section -->
+        <!---------- F O R M A T T E R - S E C T I O N ---------->
 
         <div class="formater-section">
           <div class="formater">
@@ -136,7 +157,7 @@
 
         <div id="performance-section">
 
-          <!-- card-1 -->
+          <!---------- C A R D - 1 ---------->
           <div class="card">
             <div class="content">
               <div>
@@ -156,7 +177,8 @@
             </div>
           </div>
 
-          <!-- card-2 -->
+          <!---------- C A R D - 2 ---------->
+          
           <div class="card">
             <div class="content">
               <div>
@@ -176,7 +198,8 @@
             </div>
           </div>
 
-          <!-- card-3 -->
+          <!---------- C A R D - 3 ---------->
+          
           <div class="card">
             <div class="content">
               <div>
@@ -196,7 +219,8 @@
             </div>
           </div>
 
-          <!-- card-4 -->
+         <!---------- C A R D - 4 ---------->
+
           <div class="card">
             <div class="content">
               <div>
@@ -217,7 +241,7 @@
           </div>
         </div>
 
-        <!-- charts -->
+          <!---------- C H A R T S ---------->
 
         <div id="charts">
           <div id="chart1"></div>
@@ -225,10 +249,10 @@
           <div id="chart3"></div>
           <div id="chart4"></div>
           <div id="chart5"></div>
-           <div id="real-time-chart">
-            <div id="chart6"></div>
-            <div id="chart7"></div>
-            <div id="chart8"></div>
+          <div id="real-time-chart">
+             <div id="chart6"></div>
+             <div id="chart7"></div>
+             <div id="chart8"></div>
            </div>
         </div>
 
@@ -248,7 +272,8 @@
             </div>
             <div class="visitor-content">
 
-              <!-- info-1 -->
+          <!---------- I N F O - 1 ---------->
+              
               <div class="visitors-info">
                 <p>lorem ipsum</p>
                 <p>4,569</p>
@@ -259,7 +284,8 @@
                 </div>
               </div>
 
-              <!-- info-1 -->
+          <!---------- I N F O - 2 ---------->
+              
               <div class="visitors-info">
                 <p>lorem ipsum</p>
                 <p>4,569</p>
@@ -270,7 +296,8 @@
                 </div>
               </div>
 
-              <!-- info-1 -->
+          <!---------- I N F O - 3 ---------->
+             
               <div class="visitors-info">
                 <p>lorem ipsum</p>
                 <p>4,569</p>
@@ -281,7 +308,8 @@
                 </div>
               </div>
 
-              <!-- info-1 -->
+          <!---------- I N F O - 4 ---------->
+              
               <div class="visitors-info">
                 <p>lorem ipsum</p>
                 <p>4,569</p>
@@ -292,7 +320,8 @@
                 </div>
               </div>
 
-              <!-- info-1 -->
+          <!---------- I N F O - 5 ---------->
+              
               <div class="visitors-info">
                 <p>lorem ipsum</p>
                 <p>4,569</p>
@@ -303,7 +332,8 @@
                 </div>
               </div>
 
-              <!-- info-1 -->
+          <!---------- I N F O - 6 ---------->
+             
               <div class="visitors-info">
                 <p>lorem ipsum</p>
                 <p>4,569</p>
@@ -314,7 +344,8 @@
                 </div>
               </div>
 
-              <!-- info-1 -->
+          <!---------- I N F O - 7 ---------->
+              
               <div class="visitors-info">
                 <p>lorem ipsum</p>
                 <p>4,569</p>
@@ -332,6 +363,8 @@
           <div id='calendar'></div>
         </div>
       </div>
+      <!------------------------------------------ D A S H B O A R D - E N D ----------------------------------------->
+
 
 
       <!------------------------------------------ U S E R ----------------------------------------->
@@ -367,6 +400,7 @@
         </div>
 
         <!----------------- U S E R - I N F O ------------------->
+
         <div id="main-profile">
           <div id="user-info-form">
             <div class="user-info-heading">
@@ -443,6 +477,8 @@
         </div>
 
       </div>
+      <!------------------------------------------ U S E R - E N D ----------------------------------------->
+
 
       <!------------------------------------------ M E S S A G E S  ----------------------------------------->
 
@@ -589,11 +625,11 @@
               </div>
             </div>
 
-            <!-- messages - chat -->
+            <!------- M E S S A G E - C H A T --------->
 
             <div class="chat-message">
 
-              <!-- chat-1 -->
+              <!------ C H A T - 1 ------>
               <div class="chat-name">
                 <img
                   src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
@@ -606,7 +642,8 @@
                 </div>
               </div>
 
-              <!-- chat-2 -->
+              <!------ C H A T - 2 ------>
+
               <div class="chat-name-2">
                 <div class="chat-message-content-2">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum
@@ -617,7 +654,8 @@
                 <img src="./global-images/IMG_5628.HEIC" alt="person-photo">
               </div>
 
-              <!-- chat-3 -->
+              <!------ C H A T - 3 ------>
+              
               <div class="chat-name">
                 <img
                   src="https://avatars.mds.yandex.net/i?id=9654f5238696b8c47e395c973982f8f201831052-12500642-images-thumbs&n=13"
@@ -630,7 +668,8 @@
                 </div>
               </div>
 
-              <!-- chat-4 -->
+              <!------ C H A T - 4 ------>
+              
               <div class="chat-name-2">
                 <div class="chat-message-content-2">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magnam sunt veritatis totam nostrum
@@ -643,7 +682,8 @@
               </div>
             </div>
 
-            <!-- chat-input -->
+              <!------ C H A T - I N P U T ------>
+            
             <div id="chat-input">
               <i class='bx bx-plus'></i>
               <input type="text">
@@ -652,6 +692,8 @@
           </div>
         </div>
       </div>
+      <!------------------------------------------ M E S S A G E S - E N D ----------------------------------------->
+
 
       <!--------------------------------- A N A L Y S I S - S E C T I O N -------------------------------->
 
@@ -689,6 +731,8 @@
           <div id="analysis-chart-7"></div>
         </div>
       </div>
+      <!--------------------------------- A N A L Y S I S - S E C T I O N - E N D -------------------------------->
+
 
       <!-------------------------------------- F I L E - M A N A G E R ----------------------------------------->
 
@@ -710,7 +754,7 @@
 
         <div id="files-storage-section">
 
-          <!-- card-1 -->
+          <!----------- C A R D - 1 ----------->
           <div class="file-card">
             <div class=" file-content">
               <div>
@@ -724,7 +768,8 @@
             </div>
           </div>
 
-          <!-- card-2 -->
+          <!----------- C A R D - 2 ----------->
+      
           <div class="file-card">
             <div class="file-content">
               <div>
@@ -738,7 +783,8 @@
             </div>
           </div>
 
-          <!-- card-3 -->
+          <!----------- C A R D - 3 ----------->
+         
           <div class="file-card">
             <div class="file-content">
               <div>
@@ -752,7 +798,8 @@
             </div>
           </div>
 
-          <!-- card-4 -->
+          <!----------- C A R D - 4 ----------->
+          
           <div class="file-card">
             <div class="file-content">
               <div>
@@ -767,12 +814,13 @@
           </div>
         </div>
 
-        <!-- file-boxes -->
+        <!---------- F I L E S - B O X E S --------->
 
         <div id="files-manager-boxes">
           <div id="flies-wrapper">
 
-            <!-- heading -->
+          <!----------- H E A D I N G ----------->
+            
             <div class="files-heading">
               <p>file name</p>
               <p>date and time</p>
@@ -781,7 +829,26 @@
               <p>action</p>
             </div>
 
-            <!-- files -->
+          <!----------- F I L E - 1 ----------->
+            
+            <div class="main-files">
+              <div class="fli">
+                <i class='bx bxs-file-pdf'></i>
+                <span>project design</span>
+              </div>
+              
+              <h5>26 mar,2024 at 07:50am</h5>
+              
+              <h5 style="color: orange;">40mb</h5>
+              <h5>website</h5>
+              <div class="file-icon">
+                <i class='bx bxs-pencil'></i>
+                <i class='bx bxs-trash'></i>
+              </div>
+            </div>
+           
+            <!----------- F I L E - 2 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -795,7 +862,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+
+            <!----------- F I L E - 3 ----------->
+            
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -809,7 +878,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 4 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -823,7 +894,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+          
+            <!----------- F I L E - 5 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -837,7 +910,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 6 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -851,7 +926,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 7 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -865,7 +942,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 8 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -879,7 +958,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 9 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -893,7 +974,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 10 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -907,7 +990,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 11 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -921,7 +1006,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 12 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -935,7 +1022,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 13 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -949,7 +1038,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 14 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -963,7 +1054,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
+            
+            <!----------- F I L E - 15 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -977,21 +1070,9 @@
                 <i class='bx bxs-trash'></i>
               </div>
             </div>
-            <!-- files -->
-            <div class="main-files">
-              <div class="fli">
-                <i class='bx bxs-file-pdf'></i>
-                <span>project design</span>
-              </div>
-              <h5>26 mar,2024 at 07:50am</h5>
-              <h5 style="color: orange;">40mb</h5>
-              <h5>website</h5>
-              <div class="file-icon">
-                <i class='bx bxs-pencil'></i>
-                <i class='bx bxs-trash'></i>
-              </div>
-            </div>
-            <!-- files -->
+           
+            <!----------- F I L E - 16 ----------->
+
             <div class="main-files">
               <div class="fli">
                 <i class='bx bxs-file-pdf'></i>
@@ -1009,8 +1090,10 @@
 
         </div>
       </div>
+      <!-------------------------------------- F I L E - M A N A G E R - E N D ----------------------------------------->
 
-      <!----------------------------------------------- O R D E R - S E C T I O N ------------------------------------------>
+
+      <!------------------------------------------ O R D E R - S E C T I O N ------------------------------------------>
 
       <div id="order">
 
@@ -1182,6 +1265,8 @@
           </div>
         </div>
         </div>
+      <!----------------------------------------------- O R D E R - S E C T I O N - E N D ------------------------------------------>
+
 
         <!-------------------------------------------- M A P - S E C T I O N ----------------------------------------------->
 
@@ -1202,13 +1287,17 @@
           </div>
         </div>
 
+
         <!---------------------- M A P --------------------->
       <div class="map-location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3726.188683027583!2d72.93182687502895!3d20.944936580683486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1717442777859!5m2!1sen!2sin" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
        </div>
 
-       <!--------------------------------------- S E T T I N G S ---------------------------------->
+          <!-------------------------------------------- M A P - S E C T I O N - E N D ----------------------------------------------->
+
+
+       <!--------------------------------------- S E T T I N G S ----------------------------------------->
 
        <div id="setting">
 
@@ -1228,7 +1317,7 @@
           </div>
         </div>
 
-        <!--------------------------------------- S E T T I N G - C O N T E N T ----------------------------->
+        <!--------------------------------------- S E T T I N G - C O N T E N T -------------------------------------->
 
         <div class="setting-wrapper">
 
@@ -1252,10 +1341,9 @@
               <p>plugins</p>
             </div>
           </div>
-
           <hr>
 
-          <!-- C O N T E N T - S E C T I O N -->
+          <!---------- C O N T E N T - S E C T I O N --------->
           <h1>content</h1>
           <div class="system-content">
             <div>
@@ -1283,9 +1371,8 @@
               <p>tags</p>
             </div>
           </div>
-
           <hr>
-          <!-- T O O L S - S E C T I O N  -->
+          <!------- T O O L S - S E C T I O N  ------>
 
           <h1>tools</h1>
           <div class="system-content">
@@ -1406,6 +1493,9 @@
   </div>
   </div>
 
+  <!------------------------------------------------------ V I L L A I N - C O N T A I N E R - E N D ------------------------------------------------------------>
+
+
   <!------------------------------------------ S C R I P T S ----------------------------------------->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -1419,6 +1509,9 @@
   <script src="./scripts/file-manager.js"></script>
   <script src="./scripts/dashboard.js"></script>
   <script src="./scripts/analysis.js"></script>
+  <script src="./media-query/media-query.js"></script>
+  <!------------------------------------------ S C R I P T S - E N D ----------------------------------------->
+
 </body>
 
 </html>

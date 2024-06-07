@@ -12,7 +12,6 @@
 
   .right-side{
    gap: 10px;
-   /* margin-right: 20px; */
    font-size: small;
   }
 
@@ -150,6 +149,7 @@
    #chat-section{
     width: 100%;
     height: 100%;
+    margin-top: 100px;
    }
 
    .chat-message{
@@ -197,6 +197,83 @@
     width: 90%;
     padding: 10px;
    }
+
+   /* -------------------- F I L E - M A N  A G E R ------------------ */
+
+   #files-storage-section{
+    gap: 20px;
+   }
+
+   #files-manager-boxes{
+    font-size: x-small;
+    width: 100%;
+   }
+
+   .main-files{
+    gap: 20px;
+   }
+
+   .file-icon{
+     display: flex;
+   }
+
+   .files-heading{
+    font-size: xx-small;
+   }
+
+   /* --------------------- O R D E R - S E C T I O N ------------------ */
+
+   #table{
+    width: 2000px;
+    padding: 10px 10px;
+    overflow: hidden;
+    border: none;
+    overflow-x: scroll;
+   }
+
+   #tablecntr{
+    padding: 10px 0px;
+   }
+
+   table{
+    width: 100%;
+    font-size: large;
+   }
+
+  /* ------------- P R O F I L E - S E C T I O N ----------------- */
+
+  .sign-in{
+    flex-direction: column-reverse;
+    height: 100%;
+  } 
+
+  .login-out-page{
+    width: 100%;
+    height: 750px;
+  }
+
+  .input{
+    width: 80%;
+  }
+
+  .image-1{
+    font-size: small;
+    width: 80%;
+  }
+  
+  .image-2{
+    width: 100%;
+    font-size: x-small;
+  }
+
+  .sign-up{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+
 
    }
   

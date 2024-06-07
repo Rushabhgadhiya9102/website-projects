@@ -34,8 +34,12 @@
   padding: 10px;
   width: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   text-transform: capitalize;
-  background-image: linear-gradient(to bottom, blue, lightseagreen);
+  background-image: linear-gradient(to right, blue, lightseagreen);
 }
 
 .people-list {
