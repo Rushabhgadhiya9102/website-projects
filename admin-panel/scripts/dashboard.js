@@ -833,4 +833,8 @@ $(document).ready(function(){
   });
 })
 
+// -------------- N O T I F I C A T I O N ---------------
 
+$(".bx-bell").on("click",function(){
+  $(".notification-container").slideToggle();
+})
