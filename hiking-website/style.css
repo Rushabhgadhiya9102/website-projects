@@ -71,6 +71,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: black;
 }
 
 #banner-content{
@@ -167,8 +168,4 @@ nav{
     height: 530px;
     border-radius: 20px;
     position: relative;
-}
-
-.fa-sun{
-    display: block;
 }
