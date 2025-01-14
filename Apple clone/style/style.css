@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+.gradient-txt{
+    background-image: linear-gradient(to right, aqua, rgb(253, 65, 253), red);
+    background-clip: text;
+    color: transparent;
+}
+
+/* N A V B A R */
+
+.navbar{
+    background: rgba(0, 0, 0, 0.816);
+    backdrop-filter: blur(20px);   
+}
+
+/* N A V B A R */
+
+/* S H O P P I N G - S E C T I O N */
+
+.shopping-item .card img{
+    object-fit: cover;
+    height: 38rem;
+}
+
+/* S H O P P I N G - S E C T I O N */
+
+/* C A R O U S E L */
+
+.carousel-item{
+    height: 40rem;
+    position: relative;
+}
+
+/* C A R O U S E L */
+
+/* S T O R E - S E C T I O N */
+
+#carouselExample .card{
+  width: 400px;
+  height: 500px;
+}
+
+#carouselExample2 .card{
+    width: 500px;
+    height: 500px;
+}
+
+#carouselExample3 .card{
+    width: 25rem;
+    height: 18rem;
+}
+
+#carouselExample,
+#carouselExample2,
+#carouselExample3{
+    scrollbar-width: none;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+/* S T O R E - S E C T I O N */
+
+.rotate{
+    transform: rotateZ(45deg);
+    transition: 0.2s ease;
+    transform-origin: center;
+    
+}
