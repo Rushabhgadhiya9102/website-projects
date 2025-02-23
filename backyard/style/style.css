@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: origin;
+    src: url('../fonts/Peristiwa.otf');
+}
+
+
+#onePage{
+    background-image:  url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.scrolled{
+    background-color: black;
+    transition: 0.3s;
+}
+
+.services-item:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+#homePage .btn:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+form button:hover{
+    transform: scale(1.1);
+    transition: 0.3s; 
+}
+
+.services-item img{
+    height: 250px;
+    object-fit: cover;
+}
+
+#contact-us{
+    background-color: rgb(18, 18, 18);
+}
