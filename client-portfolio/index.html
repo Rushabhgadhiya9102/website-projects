@@ -1,166 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>unnati portfolio</title>
-  </head>
-  <body>
-    <header>
-      <nav class="bg-gray-100 w-full py-2 fixed z-10">
-        <div class="container px-28">
-          <div class="nav flex justify-between items-center">
-            <ul class="navbar-nav flex gap-10">
-              <li class="nav-items">
-                <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> Home </a>
-              </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> About Me </a>
-              </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> Services </a>
-              </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> Projects </a>
-              </li>
-            </ul>
 
-            <div class="navbar-brand me-60">
-              <img src="./images/main-logo.png" class="w-10 h-10" alt="logo-1" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>unnati portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav class="bg-gray-100 w-full py-2 fixed z-10">
+      <div class="container px-28">
+        <div class="nav flex justify-between items-center">
+          <ul class="navbar-nav flex gap-10">
+            <li class="nav-items">
+              <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> Home </a>
+            </li>
+            <li class="nav-items">
+              <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> About Me </a>
+            </li>
+            <li class="nav-items">
+              <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> Services </a>
+            </li>
+            <li class="nav-items">
+              <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> Projects </a>
+            </li>
+          </ul>
+
+          <div class="navbar-brand me-60">
+            <img src="./images/main-logo.png" class="w-10 h-10" alt="logo-1" />
+          </div>
+
+          <ul class="navbar-nav">
+            <li class="nav-items">
+              <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article id="HomePage">
+      <section class="hero-section bg-no-repeat relative">
+        <img src="./images/right-side-1.svg" class="blur-2xl opacity-50 absolute top-10 end-0 -z-10" alt="">
+        <img src="./images/right-side-2.svg" class="blur-2xl opacity-70 absolute end-0 -z-10" alt="">
+        <div class="container px-28 py-10">
+
+          <div class="w-full h-screen flex items-center">
+            <div class="hero-content">
+              <div class="hero-items flex gap-2 my-20">
+
+                <span class="relative flex size-3 mt-2">
+                  <span class="absolute h-full w-full animate-ping rounded-full bg-orange-400 opacity-75"></span>
+                  <span class="relative size-3 rounded-full bg-orange-500"></span>
+                </span>
+                <p>
+                  Currently Available <br />
+                  for new project
+                </p>
+              </div>
+
+              <div class="hero-items">
+                <h2 class="text-6xl font-bold">
+                  Hey there, I’m <br />
+                  Unnati Patel
+                </h2>
+                <h1 class="text-9xl font-bold mt-5">Digital Designer</h1>
+              </div>
+
             </div>
-
-            <ul class="navbar-nav">
-              <li class="nav-items">
-                <a href="#" class="nav-link transition duration-200 ease-in-out hover:text-orange-500 p-2"> Contact Me </a>
-              </li>
-            </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </section>
 
-    <main>
-      <article id="HomePage">
-        <section class="hero-section bg-no-repeat relative">
-            <img src="./images/right-side-1.svg" class="blur-2xl opacity-50 absolute top-10 end-0 -z-10" alt="">
-            <img src="./images/right-side-2.svg" class="blur-2xl opacity-70 absolute end-0 -z-10" alt="">
-          <div class="container px-28 py-10">
-            
-            <div class="w-full h-screen flex items-center">
-              <div class="hero-content">
-                <div class="hero-items flex gap-2 my-20">
+      <section id="services" class="services relative">
+        <div class="container px-28 py-20">
+          <div class="works-title">
+            <h2 class="text-8xl font-bold text-center">Services I Provide</h2>
+          </div>
 
-                  <span class="relative flex size-3 mt-2">
-                    <span class="absolute h-full w-full animate-ping rounded-full bg-orange-400 opacity-75"></span>
-                    <span class="relative size-3 rounded-full bg-orange-500"></span>
-                  </span>
-                  <p>
-                    Currently Available <br />
-                    for new project
+          <div class="works-content py-20 w-full">
+            <div class="works-item bg-[url('./images/parallex-img-1.png')] bg-fixed bg-cover rounded-[2vw]">
+              <div class="px-10 py-15 flex justify-between text-white">
+                <p class="text-5xl font-semibold">UI/UX Designing</p>
+                <p class="text-5xl font-semibold">1.</p>
+              </div>
+            </div>
+
+            <div class="works-item my-5 bg-[url('./images/parallex-img-2.jpg')] bg-fixed bg-cover rounded-[2vw]">
+              <div class="px-10 py-15 flex justify-between text-white">
+                <p class="text-5xl font-semibold">2.</p>
+                <p class="text-5xl font-semibold">Brand Designing</p>
+              </div>
+            </div>
+
+            <div class="works-item bg-[url('./images/parallex-img-3.jpg')] bg-fixed bg-cover rounded-[2vw]">
+              <div class="px-10 py-15 flex justify-between text-white">
+                <p class="text-5xl font-semibold">Graphics Designing</p>
+                <p class="text-5xl font-semibold">3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects relative">
+        <img src="./images/67aa34f1f9dc03dc1ea0b15b_j-shape-1.svg" class="blur-2xl opacity-50 absolute top-10 -z-10"
+          alt="">
+        <img src="./images/67c41d68aebfd97f61aaf720_c-shape-2.svg" class="blur-2xl opacity-70 absolute -z-10" alt="">
+        <div class="container px-28 py-15">
+          <div class="projects-title">
+            <h2 class="text-center text-8xl font-bold">Selected Works</h2>
+          </div>
+          <div class="projects-content my-20">
+
+            <div class="grid grid-cols-6 gap-5 mt-15">
+
+              <div class="col-span-2">
+                <div class="project-item">
+                  <img src="./images/temp-project-1.webp" class="w-full h-100 object-cover rounded-lg"
+                    alt="project-1-img">
+                </div>
+              </div>
+
+              <div class="col-span-2">
+                <div class="project-item">
+                  <img src="./images/temp-project-2.webp" class="w-full h-100 object-cover rounded-lg"
+                    alt="project-2-img">
+                </div>
+              </div>
+
+              <div class="col-span-2">
+                <div class="project-item">
+                  <img src="./images/temp-project-3.webp" class="w-full h-100 object-cover rounded-lg"
+                    alt="project-3-img">
+                </div>
+              </div>
+
+              <div class="col-span-4">
+                <div class="project-item">
+                  <img src="./images/temp-project-4.webp" alt="project-img-4"
+                    class="w-full h-100 object-cover rounded-lg"></img>
+                </div>
+              </div>
+
+              <div class="col-span-2">
+                <div class="project-item">
+                  <img src="./images/temp-project-5.webp" class="w-full h-100 object-cover rounded-lg"
+                    alt="project-5-img">
+                </div>
+              </div>
+
+              <div class="col-span-6">
+                <div class="project-item">
+                  <img src="./images/temp-project-6.webp" class="w-full h-100 object-cover rounded-lg"
+                    alt="project-6-img">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="choose-me" class="choose-me">
+        <div class="container px-5 py-30 md:px-20 lg:px-28">
+          <div class="choose-me-title mb-15">
+            <h2 class="text-3xl md:text-6xl lg:text-8xl w-100 md:w-200 lg:w-250 font-bold">Why choose me?</h2>
+          </div>
+
+          <div class="choose-me-content border-b-1">
+            <div class="choose-me-item py-20">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="dicision-left">
+                  <p class="text-xl md:text-1xl lg:text-1xl font-bold ">/01</p>
+                </div>
+                <div class="choose-me-right">
+                  <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold">Creative ideas</h2>
+                  <p class="mt-5">I generate innovative concepts that inspire and engage users, transforming challenges
+                    into creative solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="choose-me-content border-b-1">
+            <div class="choose-me-item py-20">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="dicision-left">
+                  <p class="text-xl md:text-1xl lg:text-1xl font-bold ">/02</p>
+                </div>
+                <div class="choose-me-right">
+                  <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold">Expert in tools</h2>
+                  <p class="mt-5">Proficient in design tools like Sketch, Figma, and SolidWorks to bring ideas to life.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="hero-items">
-                  <h2 class="text-6xl font-bold">
-                    Hey there, I’m <br />
-                    Unnati Patel
+          <div class="choose-me-content border-b-1">
+            <div class="choose-me-item py-20">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="dicision-left">
+                  <p class="text-xl md:text-1xl lg:text-1xl font-bold ">/03</p>
+                </div>
+                <div class="choose-me-right">
+                  <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold">Pixel-perfect design</h2>
+                  <p class="mt-5">I deliver pixel-perfect designs that ensure precision and clarity in every visual
+                    element.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="choose-me-content border-b-1">
+            <div class="choose-me-item py-20">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <div class="dicision-left">
+                  <p class="text-xl md:text-1xl lg:text-1xl font-bold ">/04</p>
+                </div>
+                <div class="choose-me-right">
+                  <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold">Clean & minimal design</h2>
+                  <p class="mt-5">I specialize in clean and minimal design, focusing on simplicity and functionality to
+                    enhance user experience and visual appeal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faqSection" class="faq-section">
+        <div class="container px-28 py-15">
+          <div class="grid grid-cols-2">
+            <div class="left-side-content">
+              <div class="faq-item">
+                <h2 class="text-3xl md:text-6xl lg:text-8xl w-100 md:w-200 lg:w-250 font-bold">FAQ</h2>
+                <p class="mt-5 w-100">Got questions? Check out the frequently asked questions below for answers to
+                  common inquiries about my process, services, and how we can collaborate effectively.</p>
+              </div>
+            </div>
+            <div class="right-side-content">
+              <div class="faq-item">
+                <div class="accordion-button">
+                  <h2 class="text-xl md:text-2xl lg:text-2xl py-10 border-b font-bold">
+                    What information do you need to get started?
                   </h2>
-                  <h1 class="text-9xl font-bold mt-5">Digital Designer</h1>
                 </div>
-
+                <div class="accordion-content py-5">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in doloribus facere quae esse officia
+                    iusto, tenetur aperiam, ipsam quidem itaque aspernatur veniam? Exercitationem totam molestiae
+                    consequuntur hic dicta ex.</p>
+                </div>
               </div>
+
+              <div class="faq-item">
+                <div class="accordion-button">
+                  <h2 class="text-xl md:text-2xl lg:text-2xl py-10 border-b font-bold">
+                    What do you charge for your services?
+                  </h2>
+                </div>
+                <div class="accordion-content py-5">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in doloribus facere quae esse officia
+                    iusto, tenetur aperiam, ipsam quidem itaque aspernatur veniam? Exercitationem totam molestiae
+                    consequuntur hic dicta ex.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="accordion-button">
+                  <h2 class="text-xl md:text-2xl lg:text-2xl py-10 border-b font-bold">
+                    Can you work within our brand guidelines?
+                  </h2>
+                </div>
+                <div class="accordion-content py-5">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in doloribus facere quae esse officia
+                    iusto, tenetur aperiam, ipsam quidem itaque aspernatur veniam? Exercitationem totam molestiae
+                    consequuntur hic dicta ex.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="accordion-button">
+                  <h2 class="text-xl md:text-2xl lg:text-2xl py-10 border-b font-bold">
+                    Do you offer ongoing support after project completion?
+                  </h2>
+                </div>
+                <div class="accordion-content py-5">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in doloribus facere quae esse officia
+                    iusto, tenetur aperiam, ipsam quidem itaque aspernatur veniam? Exercitationem totam molestiae
+                    consequuntur hic dicta ex.</p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="accordion-button">
+                  <h2 class="text-xl md:text-2xl lg:text-2xl py-10 border-b font-bold">
+                    How do we get started?
+                  </h2>
+                </div>
+                <div class="accordion-content py-5">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in doloribus facere quae esse officia
+                    iusto, tenetur aperiam, ipsam quidem itaque aspernatur veniam? Exercitationem totam molestiae
+                    consequuntur hic dicta ex.</p>
+                </div>
+              </div>
+
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="services" class="services relative">
-            <img src="./images/67aa34f1f9dc03dc1ea0b15b_j-shape-1.svg" class="blur-2xl opacity-50 absolute top-10 -z-10" alt="">
-            <img src="./images/67c41d68aebfd97f61aaf720_c-shape-2.svg" class="blur-2xl opacity-70 absolute -z-10" alt="">
-          <div class="container px-28 py-20">
-            <div class="works-title">
-              <h2 class="text-8xl font-bold text-center">Services I Provide</h2>
-            </div>
+      <section id="contact-us" class="contact-us relative">
+        <img src="./images/right-side-1.svg" class="blur-2xl opacity-50 absolute top-10 end-0 -z-10" alt="">
+        <img src="./images/right-side-2.svg" class="blur-2xl opacity-70 absolute end-0 -z-10" alt="">
+        <div class="container px-28 py-15 flex items-end">
+           <h2 class="text-9xl w-250 font-bold">
+          HAVE ANY PROJECT IDEA! <span class="text-gray-500">SAY HELLO</span> 
+        </h2>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-40">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
 
-            <div class="works-content py-20 w-full">
-              <div class="works-item bg-[url('./images/parallex-img-1.png')] bg-fixed bg-cover rounded-[2vw]">
-                <div class="px-10 py-15 flex justify-between text-white">
-                  <p class="text-5xl font-semibold">UI/UX Designing</p>
-                  <p class="text-5xl font-semibold">1.</p>
-                </div>
-              </div>
+        </div>
+      </section>
+    </article>
+  </main>
 
-              <div class="works-item my-5 bg-[url('./images/parallex-img-2.jpg')] bg-fixed bg-cover rounded-[2vw]">
-                <div class="px-10 py-15 flex justify-between text-white">
-                  <p class="text-5xl font-semibold">2.</p>
-                  <p class="text-5xl font-semibold">Brand Designing</p>
-                </div>
-              </div>
+  <footer></footer>
+</body>
 
-              <div class="works-item bg-[url('./images/parallex-img-3.jpg')] bg-fixed bg-cover rounded-[2vw]">
-                <div class="px-10 py-15 flex justify-between text-white">
-                  <p class="text-5xl font-semibold">Graphics Designing</p>
-                  <p class="text-5xl font-semibold">3.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" class="projects relative">
-            <img src="./images/right-side-1.svg" class="blur-2xl opacity-50 absolute top-10 end-0 -z-10" alt="">
-            <img src="./images/right-side-2.svg" class="blur-2xl opacity-70 absolute end-0 -z-10" alt="">
-            <div class="container px-28 py-15">
-                <div class="projects-title">
-                    <h2 class="text-center text-8xl font-bold">Selected Works</h2>
-                </div>
-                <div class="projects-content my-20">
-                    
-          <div class="grid grid-cols-6 gap-5 mt-15">
-
-            <div class="col-span-2">
-              <div class="project-item">
-                <img src="./images/temp-project-1.webp" class="w-full h-100 object-cover rounded-lg" alt="project-1-img">
-              </div>
-            </div>
-
-            <div class="col-span-2">
-              <div class="project-item">
-                <img src="./images/temp-project-2.webp" class="w-full h-100 object-cover rounded-lg" alt="project-2-img">
-              </div>
-            </div>
-
-            <div class="col-span-2">
-              <div class="project-item">
-                <img src="./images/temp-project-3.webp" class="w-full h-100 object-cover rounded-lg" alt="project-3-img">
-              </div>
-            </div>
-
-            <div class="col-span-4">
-              <div class="project-item">
-                <img src="./images/temp-project-4.webp" alt="project-img-4" class="w-full h-100 object-cover rounded-lg"></img>
-              </div>
-            </div>
-
-            <div class="col-span-2">
-              <div class="project-item">
-                <img src="./images/temp-project-5.webp" class="w-full h-100 object-cover rounded-lg" alt="project-5-img">
-              </div>
-            </div>
-
-            <div class="col-span-6">
-              <div class="project-item">
-                <img src="./images/temp-project-6.webp" class="w-full h-100 object-cover rounded-lg" alt="project-6-img">
-              </div>
-            </div>
-
-          </div>
-                </div>
-            </div>
-        </section>
-      </article>
-    </main>
-
-    <footer></footer>
-  </body>
 </html>
